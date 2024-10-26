@@ -2,26 +2,25 @@ import streamlit as st
 from PIL import Image
 import requests
 
-# Sidebar for navigation
+# Sidebar for navigation with hyperlinks
 st.sidebar.title("Kushal Gowda")
-st.sidebar.write("Navigation")
-st.sidebar.write("[Personal Website](#)")
-st.sidebar.write("[Market Data Dashboard](#)")
-st.sidebar.write("[FRED Dashboard](#)")
-st.sidebar.write("[About Me](#)")
+st.sidebar.markdown("[About Me](#about-me)")
+st.sidebar.markdown("[Education](#education)")
+st.sidebar.markdown("[Professional Experience](#professional-experience)")
+st.sidebar.markdown("[Projects](#projects)")
+st.sidebar.markdown("[Certifications](#certifications)")
+st.sidebar.markdown("[Extracurricular & Competitions](#extracurricular)")
 
 # Sidebar information
 st.sidebar.title("Profile Sections")
-sections = ["About", "Education", "Professional Experience", "Projects", "Certifications", "Extracurricular & Competitions"]
-selected_section = st.sidebar.radio("Navigate", sections)
+st.sidebar.write("Navigate to each section by clicking the links above")
 
 # About Me Section
 def about_me():
-    # Header with profile image
-    st.title("About Kushal Gowda Guruvinamata Venugopal")
+    st.title("About Kushal Gowda Guruvinamata Venugopal", anchor="about-me")
     
     # Profile image
-    profile_image = Image.open("path_to_image")  # Replace with actual image file path
+    profile_image = Image.open(r"C:\\Users\\sagar\\OneDrive\\Documents\\GitHub\\Kushal_Portfolio\\assets\\images\\kush-profile-image.jpg")
     st.image(profile_image, caption="Kushal Gowda", width=150)
     
     # Contact Information
@@ -48,24 +47,20 @@ def about_me():
     st.write("**Cloud:** AWS, Azure")
     st.write("**Graphic Design/Data Visualization:** Tableau, Power BI")
 
-# Call the function to display the About Me page
-if selected_section == "About":
-    about_me()
-
 # Education Section
-elif selected_section == "Education":
-    st.title("Education")
+def education():
+    st.title("Education", anchor="education")
     st.write("### Lehigh University, United States")
     st.write("**MS Financial Engineering** (Aug 2023 - May 2025)")
     st.write("- Financial Derivatives, Financial Engineering Practicum, Quantitative Risk Management, etc.")
-    st.write("")
+    
     st.write("### Dr. Ambedkar Institute of Technology, India")
     st.write("**Bachelor of Engineering in Computer Science** (Aug 2016 - Sept 2020)")
     st.write("Certifications: CFA Level 2, Algo Trading (EPAT), Data Scientist (DataCamp), Options 101/201, Bloomberg Market Concepts")
 
 # Professional Experience Section
-elif selected_section == "Professional Experience":
-    st.title("Professional Experience")
+def professional_experience():
+    st.title("Professional Experience", anchor="professional-experience")
     st.write("### Trade Terminal, San Jose, United States")
     st.write("**Quantitative Research Intern** (May 2024 - Present)")
     st.write("- Engineered real-time NLP models, conducted trading strategies for crypto pairs, managed cross-asset volatility arbitrage, etc.")
@@ -79,16 +74,16 @@ elif selected_section == "Professional Experience":
     st.write("- Developed data pipelines, automated portfolio management, implemented risk management frameworks.")
 
 # Projects Section
-elif selected_section == "Projects":
-    st.title("Projects")
+def projects():
+    st.title("Projects", anchor="projects")
     st.write("### Volatility Optimizer Tool")
     st.write("- Developed a tool to generate optimal portfolio weights based on targeted volatility.")
     st.write("### Real-time NLP Model")
     st.write("- Engineered a model for Reddit sentiment analysis to predict Binance listings.")
 
 # Certifications Section
-elif selected_section == "Certifications":
-    st.title("Certifications")
+def certifications():
+    st.title("Certifications", anchor="certifications")
     st.write("- Chartered Financial Analyst (CFA) Level 2")
     st.write("- EPAT (Algo Trading) from QuantInsti")
     st.write("- Data Scientist and Machine Learning Scientist from DataCamp")
@@ -96,8 +91,8 @@ elif selected_section == "Certifications":
     st.write("- Bloomberg Market Concepts")
 
 # Extracurricular and Competitions Section
-elif selected_section == "Extracurricular & Competitions":
-    st.title("Extracurricular & Competitions")
+def extracurricular():
+    st.title("Extracurricular & Competitions", anchor="extracurricular")
     st.write("Involved in several projects related to financial engineering, algorithmic trading competitions, and data science hackathons.")
 
 # GitHub Integration to Display Profile
@@ -111,6 +106,14 @@ def display_github_profile(username):
     st.write(f"Followers: {profile_data['followers']}")
     st.write(f"Following: {profile_data['following']}")
     st.write(f"Profile: {profile_data['html_url']}")
+
+# Display the sections based on anchor
+about_me()
+education()
+professional_experience()
+projects()
+certifications()
+extracurricular()
 
 # Display GitHub Profile
 username = 'kushalgowdagv'  # Replace with GitHub username
