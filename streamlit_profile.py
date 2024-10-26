@@ -2,23 +2,6 @@ import streamlit as st
 from PIL import Image
 import requests
 
-# CSS for circular and responsive image
-st.markdown(
-    """
-    <style>
-    .circular-image {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 50%;
-        width: 20vw; /* Adjusts the image size responsively */
-        max-width: 150px; /* Limits the max size on larger screens */
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
 # Sidebar for navigation with hyperlinks
 st.sidebar.title("Kushal Gowda")
 st.sidebar.markdown("[About Me](#about-me)")
@@ -28,37 +11,48 @@ st.sidebar.markdown("[Projects](#projects)")
 st.sidebar.markdown("[Certifications](#certifications)")
 st.sidebar.markdown("[Extracurricular & Competitions](#extracurricular)")
 
+# Sidebar information
+st.sidebar.title("Profile Sections")
+st.sidebar.write("Navigate to each section by clicking the links above")
+
 # About Me Section
 def about_me():
     st.title("About Kushal Gowda Guruvinamata Venugopal", anchor="about-me")
     
-    # Profile image
-    profile_image = Image.open("/mnt/data/image.png")  # Load uploaded image
-    st.image(profile_image, caption="Kushal Gowda", width=150, use_column_width=True, class_="circular-image")
+    # Creating two columns for layout
+    col1, col2 = st.columns([1, 2])
     
-    # Contact Information
-    st.subheader("Contact")
-    st.write("**Email:** kushalgowdagv@gmail.com")
+    # Left Column - Profile Image and Contact Email
+    with col1:
+        # Profile image
+        profile_image = Image.open(r"C:\\Users\\sagar\\OneDrive\\Documents\\GitHub\\Kushal_Portfolio\\assets\\images\\kush-profile-image.jpg")
+        st.image(profile_image, caption="Kushal Gowda", width=150)
+        
+        # Contact Information
+        st.subheader("Contact")
+        st.write("**Email:** kushalgowdagv@gmail.com")
     
-    # Certifications
-    st.subheader("Certifications")
-    st.write("Chartered Financial Analyst (CFA): Level 2 Passed")
-    st.write("Certifications in Algo Trading (EPAT), Data Science (DataCamp), and more.")
+    # Right Column - Certifications, Education, Skills
+    with col2:
+        # Certifications
+        st.subheader("Certifications")
+        st.write("Chartered Financial Analyst (CFA): Level 2 Passed")
+        st.write("Certifications in Algo Trading (EPAT), Data Science (DataCamp), and more.")
+        
+        # Education Section
+        st.subheader("Education")
+        st.write("**Lehigh University, United States**")
+        st.write("M.S. in Financial Engineering (Aug 2023 - May 2025)")
+        
+        st.write("**Dr. Ambedkar Institute of Technology, India**")
+        st.write("Bachelor of Engineering in Computer Science (Aug 2016 - Sept 2020)")
 
-    # Education Section
-    st.subheader("Education")
-    st.write("**Lehigh University, United States**")
-    st.write("M.S. in Financial Engineering (Aug 2023 - May 2025)")
-    
-    st.write("**Dr. Ambedkar Institute of Technology, India**")
-    st.write("Bachelor of Engineering in Computer Science (Aug 2016 - Sept 2020)")
-
-    # Skills Section
-    st.subheader("Technical Skills")
-    st.write("**Data Analysis:** Python, R, SPSS")
-    st.write("**Databases:** MySQL, MariaDB, Snowflake")
-    st.write("**Cloud:** AWS, Azure")
-    st.write("**Graphic Design/Data Visualization:** Tableau, Power BI")
+        # Skills Section
+        st.subheader("Technical Skills")
+        st.write("**Data Analysis:** Python, R, SPSS")
+        st.write("**Databases:** MySQL, MariaDB, Snowflake")
+        st.write("**Cloud:** AWS, Azure")
+        st.write("**Graphic Design/Data Visualization:** Tableau, Power BI")
 
 # Education Section
 def education():
