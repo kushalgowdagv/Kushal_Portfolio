@@ -1,3 +1,4 @@
+
 import streamlit as st
 from PIL import Image
 import requests
@@ -11,9 +12,29 @@ st.sidebar.markdown("[Projects](#projects)")
 st.sidebar.markdown("[Certifications](#certifications)")
 st.sidebar.markdown("[Extracurricular & Competitions](#extracurricular)")
 
-# Sidebar information
-st.sidebar.title("Profile Sections")
-st.sidebar.write("Navigate to each section by clicking the links above")
+# Sidebar information with icons for GitHub, email, and LinkedIn
+st.sidebar.title("Connect with Me")
+github_icon = "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+linkedin_icon = "https://cdn-icons-png.flaticon.com/512/174/174857.png"
+email_icon = "https://cdn-icons-png.flaticon.com/512/732/732200.png"
+
+# Using st.markdown with HTML to include hyperlinks with images
+st.sidebar.markdown(
+    f"""
+    <div style="display: flex; align-items: center;">
+        <a href="https://github.com/kushalgowdagv" target="_blank">
+            <img src="{github_icon}" width="30" style="margin: 0 10px;">
+        </a>
+        <a href="mailto:kushalgowdagv@gmail.com" target="_blank">
+            <img src="{email_icon}" width="30" style="margin: 0 10px;">
+        </a>
+        <a href="https://www.linkedin.com/in/kushalgowdagv/" target="_blank">
+            <img src="{linkedin_icon}" width="30" style="margin: 0 10px;">
+        </a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 # About Me Section
 def about_me():
@@ -32,27 +53,119 @@ def about_me():
         st.subheader("Contact")
         st.write("**Email:** kushalgowdagv@gmail.com")
     
-    # Right Column - Certifications, Education, Skills
+
     with col2:
-        # Certifications
+    # Certifications
         st.subheader("Certifications")
         st.write("Chartered Financial Analyst (CFA): Level 2 Passed")
         st.write("Certifications in Algo Trading (EPAT), Data Science (DataCamp), and more.")
-        
-        # Education Section
+    
+    # Education Section
         st.subheader("Education")
         st.write("**Lehigh University, United States**")
         st.write("M.S. in Financial Engineering (Aug 2023 - May 2025)")
-        
+    
         st.write("**Dr. Ambedkar Institute of Technology, India**")
         st.write("Bachelor of Engineering in Computer Science (Aug 2016 - Sept 2020)")
 
-        # Skills Section
+
+
+# Skills Section with Organized Headings and Icons
         st.subheader("Technical Skills")
-        st.write("**Data Analysis:** Python, R, SPSS")
-        st.write("**Databases:** MySQL, MariaDB, Snowflake")
-        st.write("**Cloud:** AWS, Azure")
-        st.write("**Graphic Design/Data Visualization:** Tableau, Power BI")
+
+# Big Data and Analytics
+        st.write("**Big Data and Analytics:**")
+        st.markdown(
+            """
+            <div style="display: flex; align-items: center;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Apache_Spark_logo.svg" width="30" style="margin: 0 10px;"> Big Data Analytics
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Kubernetes_logo_without_workmark.svg" width="30" style="margin: 0 10px;"> Kubernetes
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Hadoop_logo_new.svg" width="30" style="margin: 0 10px;"> Hadoop
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Apache_Cassandra_logo.svg" width="30" style="margin: 0 10px;"> Apache Cassandra
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+# High Performance Computing (HPC) and Quantification
+        st.write("**High Performance Computing (HPC) and Quantification:**")
+        st.markdown(
+            """
+            <div style="display: flex; align-items: center;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Intel_HPC_logo.svg" width="30" style="margin: 0 10px;"> HPC
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Quantitative_analysis_icon.svg" width="30" style="margin: 0 10px;"> Quantification
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+# Machine Learning and AI
+        st.write("**Machine Learning and AI:**")
+        st.markdown(
+            """
+            <div style="display: flex; align-items: center;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg" width="30" style="margin: 0 10px;"> Keras
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/TensorFlow_logo.svg" width="30" style="margin: 0 10px;"> TensorFlow
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" width="30" style="margin: 0 10px;"> Scikit-Learn
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/PyTorch_logo_icon.svg" width="30" style="margin: 0 10px;"> PyTorch
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+# Databases and Data Engineering
+        st.write("**Databases and Data Engineering:**")
+        st.markdown(
+            """
+            <div style="display: flex; align-items: center;">
+                <img src="https://upload.wikimedia.org/wikipedia/en/d/dd/MySQL_logo.svg" width="30" style="margin: 0 10px;"> MySQL
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/68/MariaDB_logo.svg" width="30" style="margin: 0 10px;"> MariaDB
+                <img src="https://upload.wikimedia.org/wikipedia/en/2/23/Snowflake_Logo.svg" width="30" style="margin: 0 10px;"> Snowflake
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/SQL_logo.svg" width="30" style="margin: 0 10px;"> SQL
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+# Quantitative Finance and Financial Modeling
+        st.write("**Quantitative Finance and Financial Modeling:**")
+        st.markdown(
+            """
+            <div style="display: flex; align-items: center;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Bloomberg_logo.svg" width="30" style="margin: 0 10px;"> Bloomberg Terminal
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" width="30" style="margin: 0 10px;"> MATLAB
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Excel_logo.svg" width="30" style="margin: 0 10px;"> Microsoft Excel
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+    # Programming Languages
+        st.write("**Programming Languages:**")
+        st.markdown(
+            """
+            <div style="display: flex; align-items: center;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" width="30" style="margin: 0 10px;"> Python
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" width="30" style="margin: 0 10px;"> C++
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/R_logo.svg" width="30" style="margin: 0 10px;"> R
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Java_Logo.svg" width="30" style="margin: 0 10px;"> Java
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+# Cloud Computing
+        st.write("**Cloud Computing:**")
+        st.markdown(
+            """
+            <div style="display: flex; align-items: center;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" width="30" style="margin: 0 10px;"> AWS
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Microsoft_Azure_Logo.svg" width="30" style="margin: 0 10px;"> Azure
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
 
 # Education Section
 def education():
