@@ -83,11 +83,11 @@ def about_me():
         t.markdown(
             """
             <div style="display: flex; align-items: center;">
-                a href="https://www.your-badge-link1.com" target="_blank">
-                    <img src="https://path-to-badge-image1.png" width="50" style="margin: 0 10px;">
+                a href="https://github.com/kushalgowdagv/Kushal_Portfolio/blob/main/images/90rm512v.png" target="_blank">
+                    <img src="https://github.com/kushalgowdagv/Kushal_Portfolio/blob/main/images/90rm512v.png" width="50" style="margin: 0 10px;">
                 </a>
-                <a href="https://www.your-badge-link2.com" target="_blank">
-                    <img src="https://path-to-badge-image2.png" width="50" style="margin: 0 10px;">
+                <a href="https://github.com/kushalgowdagv/Kushal_Portfolio/blob/main/images/90rm512v.png" target="_blank">
+                    <img src="https://github.com/kushalgowdagv/Kushal_Portfolio/blob/main/images/wa41bvjd.png" width="50" style="margin: 0 10px;">
                 </a>
             </div>
             """,
@@ -96,7 +96,7 @@ def about_me():
     
     # Resume Download Button
         st.subheader("Resume")
-        resume_url = "https://path-to-your-resume.com/your_resume.pdf"
+        resume_url = "https://drive.google.com/file/d/1JOnG4jDvGrL7CskoO7C3PJcAvDn8U0QI/view?usp=sharing"
         st.markdown(
             f"""
             <div style="display: flex; justify-content: center; margin-top: 10px;">
