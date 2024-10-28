@@ -101,36 +101,36 @@ def about_me():
         st.markdown(
             """
             <div style="display: flex; align-items: center;">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Apache_Spark_logo.svg" width="30" style="margin: 0 10px;"> Big Data Analytics
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Kubernetes_logo_without_workmark.svg" width="30" style="margin: 0 10px;"> Kubernetes
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Hadoop_logo_new.svg" width="30" style="margin: 0 10px;"> Hadoop
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Apache_Cassandra_logo.svg" width="30" style="margin: 0 10px;"> Apache Cassandra
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Apache_Spark_logo.svg" width="50" style="margin: 0 20px;"> Big Data Analytics
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/926px-Kubernetes_logo_without_workmark.svg.png" width="50" style="margin: 0 20px;"> Kubernetes
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Hadoop_logo_new.svg" width="50" style="margin: 0 20px;"> Hadoop
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Cassandra_logo.svg" width="50" style="margin: 0 20px;"> Apache Cassandra
             </div>
             """,
             unsafe_allow_html=True
         )
 
-# High Performance Computing (HPC) and Quantification
-        st.write("**High Performance Computing (HPC) and Quantification:**")
-        st.markdown(
-            """
-            <div style="display: flex; align-items: center;">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Intel_HPC_logo.svg" width="30" style="margin: 0 10px;"> HPC
-                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Quantitative_analysis_icon.svg" width="30" style="margin: 0 10px;"> Quantification
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
+# # High Performance Computing (HPC) and Quantification
+#         st.write("**High Performance Computing (HPC) and Quantification:**")
+#         st.markdown(
+#             """
+#             <div style="display: flex; align-items: center;">
+#                 <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Intel_HPC_logo.svg" width="30" style="margin: 0 10px;"> HPC
+#                 <img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Quantitative_analysis_icon.svg" width="30" style="margin: 0 10px;"> Quantification
+#             </div>
+#             """,
+#             unsafe_allow_html=True
+#         )
 
 # Machine Learning and AI
         st.write("**Machine Learning and AI:**")
         st.markdown(
             """
             <div style="display: flex; align-items: center;">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg" width="30" style="margin: 0 10px;"> Keras
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/TensorFlow_logo.svg" width="30" style="margin: 0 10px;"> TensorFlow
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" width="30" style="margin: 0 10px;"> Scikit-Learn
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/PyTorch_logo_icon.svg" width="30" style="margin: 0 10px;"> PyTorch
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg" width="50" style="margin: 0 20px;"> Keras
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/TensorFlow_logo.svg" width="50" style="margin: 0 20px;"> TensorFlow
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" width="50" style="margin: 0 20px;"> Scikit-Learn
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/PyTorch_logo_icon.svg" width="50" style="margin: 0 20px;"> PyTorch
             </div>
             """,
             unsafe_allow_html=True
@@ -141,23 +141,22 @@ def about_me():
         st.markdown(
             """
             <div style="display: flex; align-items: center;">
-                <img src="https://upload.wikimedia.org/wikipedia/en/d/dd/MySQL_logo.svg" width="30" style="margin: 0 10px;"> MySQL
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/68/MariaDB_logo.svg" width="30" style="margin: 0 10px;"> MariaDB
-                <img src="https://upload.wikimedia.org/wikipedia/en/2/23/Snowflake_Logo.svg" width="30" style="margin: 0 10px;"> Snowflake
-                <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/SQL_logo.svg" width="30" style="margin: 0 10px;"> SQL
+                <img src="https://upload.wikimedia.org/wikipedia/en/d/dd/MySQL_logo.svg" width="50" style="margin: 0 20px;"> MySQL
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Snowflake_Logo.svg" width="50" style="margin: 0 20px;"> Snowflake
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Sql_data_base_with_logo.svg" width="50" style="margin: 0 20px;"> SQL
             </div>
             """,
             unsafe_allow_html=True
         )
 
 # Quantitative Finance and Financial Modeling
-        st.write("**Quantitative Finance and Financial Modeling:**")
+        st.write("**Financial Terminals:**")
         st.markdown(
             """
             <div style="display: flex; align-items: center;">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Bloomberg_logo.svg" width="30" style="margin: 0 10px;"> Bloomberg Terminal
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" width="30" style="margin: 0 10px;"> MATLAB
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Excel_logo.svg" width="30" style="margin: 0 10px;"> Microsoft Excel
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Bloomberg_logo.svg" width="50" style="margin: 0 20px;"> Bloomberg Terminal
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Morningstar_Logo.svg" width="50" style="margin: 0 20px;"> Morning Star
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Refintiv_Logo.svg" width="50" style="margin: 0 20px;"> Rifinitiv
             </div>
             """,
             unsafe_allow_html=True
@@ -168,10 +167,11 @@ def about_me():
         st.markdown(
             """
             <div style="display: flex; align-items: center;">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" width="30" style="margin: 0 10px;"> Python
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" width="30" style="margin: 0 10px;"> C++
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/R_logo.svg" width="30" style="margin: 0 10px;"> R
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Java_Logo.svg" width="30" style="margin: 0 10px;"> Java
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" width="50" style="margin: 0 20px;"> Python
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" width="50" style="margin: 0 20px;"> C++
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/R_logo.svg" width="50" style="margin: 0 20px;"> R
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" width="50" style="margin: 0 20px;"> MATLAB
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Java_Logo.svg" width="50" style="margin: 0 20px;"> Java
             </div>
             """,
             unsafe_allow_html=True
@@ -182,8 +182,9 @@ def about_me():
         st.markdown(
             """
             <div style="display: flex; align-items: center;">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" width="30" style="margin: 0 10px;"> AWS
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Microsoft_Azure_Logo.svg" width="30" style="margin: 0 10px;"> Azure
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" width="50" style="margin: 0 20px;"> AWS
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Microsoft_Azure_Logo.svg" width="50" style="margin: 0 20px;"> Azure 
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg" width="50" style="margin: 0 20px;"> Docker 
             </div>
             """,
             unsafe_allow_html=True
