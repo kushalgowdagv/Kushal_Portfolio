@@ -27,7 +27,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 # Sidebar for navigation with hyperlinks
-st.sidebar.title("Kushal Gowda")
+st.sidebar.title("Kushal Gowda G V")
 st.sidebar.markdown("[About Me](#about-me)")
 st.sidebar.markdown("[Education](#education)")
 st.sidebar.markdown("[Professional Experience](#professional-experience)")
@@ -61,7 +61,7 @@ st.sidebar.markdown(
 
 # About Me Section
 def about_me():
-    st.title("About Kushal Gowda Guruvinamata Venugopal", anchor="about-me")
+    st.title("About Kushal Gowda", anchor="about-me")
     
     # Creating two columns for layout
     col1, col2 = st.columns([1, 2])
@@ -75,23 +75,74 @@ def about_me():
         # Contact Information
         st.subheader("Contact")
         st.write("**Email:** kushalgowdagv@gmail.com")
+
+        st.subheader("Badges")
+
+
+
+        t.markdown(
+            """
+            <div style="display: flex; align-items: center;">
+                a href="https://www.your-badge-link1.com" target="_blank">
+                    <img src="https://path-to-badge-image1.png" width="50" style="margin: 0 10px;">
+                </a>
+                <a href="https://www.your-badge-link2.com" target="_blank">
+                    <img src="https://path-to-badge-image2.png" width="50" style="margin: 0 10px;">
+                </a>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+    
+    # Resume Download Button
+        st.subheader("Resume")
+        resume_url = "https://path-to-your-resume.com/your_resume.pdf"
+        st.markdown(
+            f"""
+            <div style="display: flex; justify-content: center; margin-top: 10px;">
+                <  a href="{resume_url}" target="_blank">
+                    <button style="padding: 10px 20px; font-size: 16px;">Download Resume</button>
+                </a>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
     
 
     with col2:
     # Certifications
-        st.subheader("Certifications")
-        st.write("Chartered Financial Analyst (CFA): Level 2 Passed")
-        st.write("Certifications in Algo Trading (EPAT), Data Science (DataCamp), and more.")
+    #     st.subheader("Certifications")
+    #     st.write("Chartered Financial Analyst (CFA): Level 2 Passed")
+    #     st.write("Certifications in Algo Trading (EPAT), Data Science (DataCamp), and more.")
     
-    # Education Section
-        st.subheader("Education")
-        st.write("**Lehigh University, United States**")
-        st.write("M.S. in Financial Engineering (Aug 2023 - May 2025)")
+    # # Education Section
+    #     st.subheader("Education")
+    #     st.write("**Lehigh University, United States**")
+    #     st.write("M.S. in Financial Engineering (Aug 2023 - May 2025)")
     
-        st.write("**Dr. Ambedkar Institute of Technology, India**")
-        st.write("Bachelor of Engineering in Computer Science (Aug 2016 - Sept 2020)")
+    #     st.write("**Dr. Ambedkar Institute of Technology, India**")
+    #     st.write("Bachelor of Engineering in Computer Science (Aug 2016 - Sept 2020)")
 
+        # Updated Certification and Education Content
+        st.markdown(
+            """
+            **Kushal Gowda** is a **Quantitative Researcher** and **Developer** with hands-on expertise in **quantitative trading**, **algorithmic strategies**, and **risk management**. 
+            He brings a solid background in **statistical arbitrage**, **NLP sentiment analysis**, and **market risk modeling** from his recent work as a **Quantitative Research Intern** .
 
+            Kushal is currently pursuing a **Master’s in Financial Engineering** at **Lehigh University** and **Chartered Financial Analyst (CFA)** Level III Candidate, specializing in **derivatives pricing**, **stochastic processes**, and **portfolio optimization**.
+            His professional journey includes notable roles at institutions like **HTTS - High Tech Trading System Fund** and **Finominal**, focusing on **equity portfolio optimization**, **dynamic VaR implementations**, 
+            and the development of **volatility-optimized tools**.
+
+            With a technical foundation in **Python**, **C++**, **SQL**, and various **trading platforms**, he has executed sophisticated **quantitative strategies** and **risk analysis frameworks** to enhance **profitability** 
+            and **portfolio resilience**.
+
+            Beyond finance, Kushal holds certifications in **algorithmic trading**, **data science**, and **machine learning**. His educational background in **Computer Science** from 
+            **Dr. Ambedkar Institute of Technology** further supports his diverse technical capabilities. Eager to innovate in the quantitative finance domain, 
+            Kushal combines his passion for **technology** with an **analytical approach** to deliver impactful solutions.
+            """,
+            unsafe_allow_html=True
+        )
 
 # Skills Section with Organized Headings and Icons
         st.subheader("Technical Skills")
@@ -157,10 +208,27 @@ def about_me():
                 <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Bloomberg_logo.svg" width="50" style="margin: 0 20px;"> Bloomberg Terminal
                 <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Morningstar_Logo.svg" width="50" style="margin: 0 20px;"> Morning Star
                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Refintiv_Logo.svg" width="50" style="margin: 0 20px;"> Rifinitiv
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Polygon_Blockchain_Matic_Logo.svg" width="50" style="margin: 0 20px;"> Polygon
+
             </div>
             """,
             unsafe_allow_html=True
         )
+
+        st.write("**Brokers:**")
+        st.markdown(
+            """
+            <div style="display: flex; align-items: center;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Interactive_Brokers_Logo_%282014%29.svg" width="50" style="margin: 0 20px;"> Interactive Broker
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Coinbase.svg" width="50" style="margin: 0 20px;"> Coinbase
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Binance_logo.svg" width="50" style="margin: 0 20px;"> Binance
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Zerodha_logo.svg" width="50" style="margin: 0 20px;"> Zerodha
+
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
 
     # Programming Languages
         st.write("**Programming Languages:**")
