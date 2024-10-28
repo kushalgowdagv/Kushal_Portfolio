@@ -2,7 +2,30 @@
 import streamlit as st
 from PIL import Image
 import requests
-
+st.markdown(
+    """
+    <style>
+    /* Adjust column widths and image sizes based on screen size */
+    @media (max-width: 768px) {
+        .profile-image {
+            width: 100px !important;
+        }
+        .sidebar-icons img {
+            width: 20px !important;
+        }
+    }
+    @media (min-width: 769px) {
+        .profile-image {
+            width: 150px !important;
+        }
+        .sidebar-icons img {
+            width: 30px !important;
+        }
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 # Sidebar for navigation with hyperlinks
 st.sidebar.title("Kushal Gowda")
 st.sidebar.markdown("[About Me](#about-me)")
