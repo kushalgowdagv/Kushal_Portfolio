@@ -80,14 +80,14 @@ def about_me():
 
 
 
-        t.markdown(
+        st.markdown(
             """
             <div style="display: flex; align-items: center;">
-                a href="https://github.com/kushalgowdagv/Kushal_Portfolio/blob/main/images/90rm512v.png" target="_blank">
-                    <img src="https://github.com/kushalgowdagv/Kushal_Portfolio/blob/main/images/90rm512v.png" width="50" style="margin: 0 10px;">
+                <a href="https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/90rm512v.png" target="_blank">
+                    <img src="https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/90rm512v.png" width="100" style="margin: 0 10px;">
                 </a>
-                <a href="https://github.com/kushalgowdagv/Kushal_Portfolio/blob/main/images/90rm512v.png" target="_blank">
-                    <img src="https://github.com/kushalgowdagv/Kushal_Portfolio/blob/main/images/wa41bvjd.png" width="50" style="margin: 0 10px;">
+                <a href="https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/wa41bvjd.png" target="_blank">
+                    <img src="https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/wa41bvjd.png" width="100" style="margin: 0 10px;">
                 </a>
             </div>
             """,
@@ -95,13 +95,36 @@ def about_me():
         )
     
     # Resume Download Button
+        # st.subheader("Resume")
+        # resume_url = "https://drive.google.com/file/d/1JOnG4jDvGrL7CskoO7C3PJcAvDn8U0QI/view?usp=sharing"
+        # st.markdown(
+        #     f"""
+        #     <div style="display: flex; justify-content: center; margin-top: 10px;">
+        #         <  a href="{resume_url}" target="_blank">
+        #             <button style="padding: 10px 20px; font-size: 16px;">Download Resume</button>
+        #         </a>
+        #     </div>
+        #     """,
+        #     unsafe_allow_html=True
+        # )
+
+
+# Resume Download Button
         st.subheader("Resume")
         resume_url = "https://drive.google.com/file/d/1JOnG4jDvGrL7CskoO7C3PJcAvDn8U0QI/view?usp=sharing"
         st.markdown(
             f"""
             <div style="display: flex; justify-content: center; margin-top: 10px;">
-                <  a href="{resume_url}" target="_blank">
-                    <button style="padding: 10px 20px; font-size: 16px;">Download Resume</button>
+                <a href="{resume_url}" target="_blank" style="
+                    padding: 10px 20px;
+                    font-size: 16px;
+                    color: white;
+                    background-color: #4CAF50;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    display: inline-block;
+                    ">
+                    Download Resume
                 </a>
             </div>
             """,
