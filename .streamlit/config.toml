@@ -4,3 +4,7 @@ backgroundColor = "#FFFFFF"
 secondaryBackgroundColor = "#F9F9F9"
 textColor = "#333333"
 font = "sans serif"
+
+headless = true
+enableCORS = false
+port = 8501
