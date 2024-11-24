@@ -55,7 +55,7 @@ st.markdown(
 # Sidebar for navigation with hyperlinks
 st.sidebar.title("Kushal Gowda G V")
 st.sidebar.markdown("[About Me](#about-me)")
-st.sidebar.markdown("[Education](#education)")
+# st.sidebar.markdown("[Education](#education)")
 st.sidebar.markdown("[Professional Experience](#professional-experience)")
 st.sidebar.markdown("[Projects](#projects)")
 st.sidebar.markdown("[Certifications](#certifications)")
@@ -85,6 +85,16 @@ st.sidebar.markdown(
     unsafe_allow_html=True
 )
 
+
+# Add the quote at the bottom of the sidebar
+st.sidebar.markdown(
+    """
+    <div style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #ccc; font-style: italic; text-align: center;">
+        <p>"It is better to be approximately right than completely wrong."</p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 # About Me Section
 def about_me():
@@ -203,7 +213,7 @@ def about_me():
     #         """,
     #         unsafe_allow_html=True,
     #     )
-        st.title("Education", anchor="education")
+        # st.title("Education", anchor="education")
     
     # Lehigh University
         st.markdown(
@@ -218,8 +228,8 @@ def about_me():
         st.markdown(
             """
             ### <u>Chartered Financial Analyst Society (CFA), USA</u>
-            **CFA Level 1 and Level 2 passed with above 90th percentile**  
-            *2016 - 2020*
+            **CFA Level 1 and Level 2 passed**  
+            *2021 - 2022*
             """, unsafe_allow_html=True
         )
         st.markdown(
@@ -384,35 +394,35 @@ def about_me():
         )
 
 
-def education():
-    st.title("Education", anchor="education")
+# def education():
+#     st.title("Education", anchor="education")
     
-    # Lehigh University
-    st.write("### Lehigh University, United States")
-    lehigh_logo_url = "https://collegeaim.org/wp-content/uploads/2021/08/Lehigh-University-logo.png"
-    st.markdown(
-        f"""
-        <div style="display: flex; align-items: center;">
-            <img src="{lehigh_logo_url}" width="50" style="margin-right: 10px;">
-            <span><strong>MS Financial Engineering</strong> (Aug 2023 - May 2025)</span>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
+#     # Lehigh University
+#     st.write("### Lehigh University, United States")
+#     lehigh_logo_url = "https://collegeaim.org/wp-content/uploads/2021/08/Lehigh-University-logo.png"
+#     st.markdown(
+#         f"""
+#         <div style="display: flex; align-items: center;">
+#             <img src="{lehigh_logo_url}" width="50" style="margin-right: 10px;">
+#             <span><strong>MS Financial Engineering</strong> (Aug 2023 - May 2025)</span>
+#         </div>
+#         """,
+#         unsafe_allow_html=True,
+#     )
 
 
-    # Dr. Ambedkar Institute of Technology
-    st.write("### Dr. Ambedkar Institute of Technology, India")
-    ambedkar_logo_url = "https://www.getmycollege.com/image-upload/new-uploads/college/logo/dr-ambedkar-institute-of-technology-logo-406.jpg"
-    st.markdown(
-        f"""
-        <div style="display: flex; align-items: center;">
-            <img src="{ambedkar_logo_url}" width="50" style="margin-right: 10px;">
-            <span><strong>Bachelor of Engineering in Computer Science</strong> (Aug 2016 - Sept 2020)</span>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
+#     # Dr. Ambedkar Institute of Technology
+#     st.write("### Dr. Ambedkar Institute of Technology, India")
+#     ambedkar_logo_url = "https://www.getmycollege.com/image-upload/new-uploads/college/logo/dr-ambedkar-institute-of-technology-logo-406.jpg"
+#     st.markdown(
+#         f"""
+#         <div style="display: flex; align-items: center;">
+#             <img src="{ambedkar_logo_url}" width="50" style="margin-right: 10px;">
+#             <span><strong>Bachelor of Engineering in Computer Science</strong> (Aug 2016 - Sept 2020)</span>
+#         </div>
+#         """,
+#         unsafe_allow_html=True,
+#     )
 
 
 
@@ -674,7 +684,7 @@ def contact_me():
 
 # Display the sections based on anchor
 about_me()
-education()
+# education()
 professional_experience()
 projects()
 certifications()
