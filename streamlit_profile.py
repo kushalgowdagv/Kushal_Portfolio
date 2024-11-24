@@ -21,7 +21,11 @@ st.markdown(
         background-color: white;
         margin-bottom: 20px;
     }
-
+    /* Divider line for headings */
+    .divider {
+        border-top: 2px solid #ccc;
+        margin: 20px 0;
+    }
     /* Hover effects for buttons and links */
     a:hover {
         color: #457B9D !important;
@@ -97,8 +101,98 @@ st.sidebar.markdown(
 )
 
 # About Me Section
+# def about_me():
+# # def about_me():
+#     st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
+#     # st.title("About Kushal Gowda", anchor="about-me")
+#     # Rest of the function
+#     st.title("About Kushal Gowda", anchor="about-me")
+    
+#     # Creating two columns for layout
+#     col1, col2 = st.columns([1, 2])
+    
+#     # Left Column - Profile Image and Contact Email
+#     with col1:
+#         # Profile image
+#         profile_image = Image.open(r"C:\\Users\\sagar\\OneDrive\\Documents\\GitHub\\Kushal_Portfolio\\assets\\images\\kush-profile-image.jpg")
+#         st.image(profile_image, caption="Kushal Gowda", width=150)
+        
+#         # Contact Information
+#         st.subheader("Contact")
+#         st.write("**Email:** kushalgowdagv@gmail.com")
+
+#         st.subheader("Badges")
+
+
+
+#         st.markdown(
+#             """
+#             <div style="display: flex; align-items: center;">
+#                 <a href="https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/90rm512v.png" target="_blank">
+#                     <img src="https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/90rm512v.png" width="100" style="margin: 0 10px;">
+#                 </a>
+#                 <a href="https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/wa41bvjd.png" target="_blank">
+#                     <img src="https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/wa41bvjd.png" width="100" style="margin: 0 10px;">
+#                 </a>
+#             </div>
+#             """,
+#             unsafe_allow_html=True
+#         )
+
+
+# # Resume Download Button
+#         st.subheader("Resume")
+#         resume_url = "https://drive.google.com/file/d/1JOnG4jDvGrL7CskoO7C3PJcAvDn8U0QI/view?usp=sharing"
+#         st.markdown(
+#             f"""
+#             <div style="display: flex; justify-content: center; margin-top: 10px;">
+#                 <a href="{resume_url}" target="_blank" style="
+#                     padding: 10px 20px;
+#                     font-size: 16px;
+#                     color: white;
+#                     background-color: #4CAF50;
+#                     text-decoration: none;
+#                     border-radius: 5px;
+#                     display: inline-block;
+#                     ">
+#                     Download Resume
+#                 </a>
+#             </div>
+#             """,
+#             unsafe_allow_html=True
+#         )
+
+    
+
+#     with col2:
+#         st.markdown("<h2>Education</h2>", unsafe_allow_html=True)
+
+#     # Lehigh University
+#         st.markdown(
+#             """
+#             ### <u>Lehigh University, United States</u>
+#             **MS Financial Engineering**  
+#             *Aug 2023 - May 2025*
+#             """, unsafe_allow_html=True
+#         )
+    
+#     # Chartered Financial Analyst (CFA)
+#         st.markdown(
+#             """
+#             ### <u>Chartered Financial Analyst Society (CFA), USA</u>
+#             **CFA Level 1 and Level 2 passed**  
+#             *2021 & 2022*
+#             """, unsafe_allow_html=True
+#         )
+#         st.markdown(
+#             """
+#             ### <u>Dr. Ambedkar Institute of Technology, India</u>
+#             **Bachelor of Engineering in Computer Science**  
+#             *Aug 2016 - Sept 2020*
+#             """, unsafe_allow_html=True
+#         )
 def about_me():
-    st.markdown('<div class="section">', unsafe_allow_html=True)
+    st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
     st.title("About Kushal Gowda", anchor="about-me")
     
     # Creating two columns for layout
@@ -111,37 +205,34 @@ def about_me():
         st.image(profile_image, caption="Kushal Gowda", width=150)
         
         # Contact Information
-        st.subheader("Contact")
-        st.write("**Email:** kushalgowdagv@gmail.com")
+        st.markdown('<h3 style="font-size: 18px;">Contact</h3>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size: 14px;">kushalgowdagv@gmail.com</p>', unsafe_allow_html=True)
 
-        st.subheader("Badges")
-
-
-
+        # Badges Section
+        st.markdown('<h3 style="font-size: 18px;">Badges</h3>', unsafe_allow_html=True)
         st.markdown(
             """
             <div style="display: flex; align-items: center;">
                 <a href="https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/90rm512v.png" target="_blank">
-                    <img src="https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/90rm512v.png" width="100" style="margin: 0 10px;">
+                    <img src="https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/90rm512v.png" width="80" style="margin: 0 10px;">
                 </a>
                 <a href="https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/wa41bvjd.png" target="_blank">
-                    <img src="https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/wa41bvjd.png" width="100" style="margin: 0 10px;">
+                    <img src="https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/wa41bvjd.png" width="80" style="margin: 0 10px;">
                 </a>
             </div>
             """,
             unsafe_allow_html=True
         )
 
-
-# Resume Download Button
-        st.subheader("Resume")
+        # Resume Download Button
+        st.markdown('<h3 style="font-size: 18px;">Resume</h3>', unsafe_allow_html=True)
         resume_url = "https://drive.google.com/file/d/1JOnG4jDvGrL7CskoO7C3PJcAvDn8U0QI/view?usp=sharing"
         st.markdown(
             f"""
             <div style="display: flex; justify-content: center; margin-top: 10px;">
                 <a href="{resume_url}" target="_blank" style="
-                    padding: 10px 20px;
-                    font-size: 16px;
+                    padding: 5px 10px;
+                    font-size: 14px;
                     color: white;
                     background-color: #4CAF50;
                     text-decoration: none;
@@ -155,67 +246,11 @@ def about_me():
             unsafe_allow_html=True
         )
 
-    
-
     with col2:
+        # Add Education Section
+        st.markdown("<h2>Education</h2>", unsafe_allow_html=True)
 
-        # st.markdown(
-        #     """
-        #     **Kushal Gowda** is a **Quantitative Researcher** and **Developer** with hands-on expertise in **quantitative trading**, **algorithmic strategies**, and **risk management**. 
-        #     He brings a solid background in **statistical arbitrage**, **NLP sentiment analysis**, and **market risk modeling** from his recent work as a **Quantitative Research Intern** .
-
-        #     Kushal is currently pursuing a **Master’s in Financial Engineering** at **Lehigh University** and **Chartered Financial Analyst (CFA)** Level III Candidate, specializing in **derivatives pricing**, **stochastic processes**, and **portfolio optimization**.
-        #     His professional journey includes notable roles at institutions like **HTTS - High Tech Trading System Fund** and **Finominal**, focusing on **equity portfolio optimization**, **dynamic VaR implementations**, 
-        #     and the development of **volatility-optimized tools**.
-
-        #     Beyond finance, Kushal holds certifications in **algorithmic trading**, **data science**, and **machine learning**. His educational background in **Computer Science** from 
-        #     **Dr. Ambedkar Institute of Technology** further supports his diverse technical capabilities. Eager to innovate in the quantitative finance domain, 
-        #     Kushal combines his passion for **technology** with an **analytical approach** to deliver impactful solutions.
-        #     """,
-        #     unsafe_allow_html=True
-        # )
-    #     st.title("Education", anchor="education")
-    
-    # # Lehigh University
-    #     st.write("### Lehigh University, United States")
-    #     lehigh_logo_url = "https://collegeaim.org/wp-content/uploads/2021/08/Lehigh-University-logo.png"
-    #     st.markdown(
-    #         f"""
-    #         <div style="display: flex; align-items: center;">
-    #             <img src="{lehigh_logo_url}" width="50" style="margin-right: 10px;">
-    #             <span><strong>MS Financial Engineering</strong> (Aug 2023 - May 2025)</span>
-    #         </div>
-    #         """,
-    #         unsafe_allow_html=True,
-    #     )
-    # # CFA 
-    #     st.write("### Chartered Financial Analyst Society(CFA), USA")
-    #     cfa_url = "https://higherlogicdownload.s3.amazonaws.com/CFAI/bdc5586b-297b-4536-bd76-5bfa158a0b36/UploadedImages/CFA_Institute_Logo_RGB.png"
-    #     st.markdown(
-    #         f"""
-    #         <div style="display: flex; align-items: center;">
-    #             <img src="{cfa_url}" width="50" style="margin-right: 10px;">
-    #             <span><strong>CFA Level 1 and Level 2 passed with abouve 90th percentile</strong> (Aug 2016 - Sept 2020)</span>
-    #         </div>
-    #         """,
-    #         unsafe_allow_html=True,
-    #     )
-
-    # # Dr. Ambedkar Institute of Technology
-    #     st.write("### Dr. Ambedkar Institute of Technology, India")
-    #     ambedkar_logo_url = "https://www.getmycollege.com/image-upload/new-uploads/college/logo/dr-ambedkar-institute-of-technology-logo-406.jpg"
-    #     st.markdown(
-    #         f"""
-    #         <div style="display: flex; align-items: center;">
-    #             <img src="{ambedkar_logo_url}" width="50" style="margin-right: 10px;">
-    #             <span><strong>Bachelor of Engineering in Computer Science</strong> (Aug 2016 - Sept 2020)</span>
-    #         </div>
-    #         """,
-    #         unsafe_allow_html=True,
-    #     )
-        # st.title("Education", anchor="education")
-    
-    # Lehigh University
+        # Lehigh University
         st.markdown(
             """
             ### <u>Lehigh University, United States</u>
@@ -223,15 +258,17 @@ def about_me():
             *Aug 2023 - May 2025*
             """, unsafe_allow_html=True
         )
-    
-    # Chartered Financial Analyst (CFA)
+
+        # Chartered Financial Analyst (CFA)
         st.markdown(
             """
             ### <u>Chartered Financial Analyst Society (CFA), USA</u>
             **CFA Level 1 and Level 2 passed**  
-            *2021 - 2022*
+            *2021 & 2022*
             """, unsafe_allow_html=True
         )
+
+        # Dr. Ambedkar Institute of Technology
         st.markdown(
             """
             ### <u>Dr. Ambedkar Institute of Technology, India</u>
@@ -239,11 +276,13 @@ def about_me():
             *Aug 2016 - Sept 2020*
             """, unsafe_allow_html=True
         )
+
+
 # Skills Section with Organized Headings and Icons
-    st.subheader("Technical Skills")
+        st.subheader("Technical Skills")
 # Big Data and Analytics
-    st.write("**Big Data and Analytics:**")
-    st.markdown(
+        # st.write("**Big Data and Analytics:**")
+        st.markdown(
         """
         <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
         <div style="text-align: center;">
@@ -265,11 +304,11 @@ def about_me():
         </div>
         """,
         unsafe_allow_html=True
-    )
+        )
 
 # Machine Learning and AI
-    st.write("**Machine Learning and AI:**")
-    st.markdown(
+        # st.write("**Machine Learning and AI:**")
+        st.markdown(
             """
         <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
         <div style="text-align: center;">
@@ -291,11 +330,11 @@ def about_me():
         </div>
         """,
         unsafe_allow_html=True
-    )
+        )
 
 # Databases and Data Engineering
-    st.write("**Databases and Data Engineering:**")
-    st.markdown(
+        # st.write("**Databases and Data Engineering:**")
+        st.markdown(
         """
         <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
         <div style="text-align: center;">
@@ -316,8 +355,8 @@ def about_me():
         )
 
 # Financial Terminals
-    st.write("**Financial Terminals:**")
-    st.markdown(
+        # st.write("**Financial Terminals:**")
+        st.markdown(
         """
         <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
         <div style="text-align: center;">
@@ -342,8 +381,8 @@ def about_me():
         )
 
 # Programming Languages
-    st.write("**Programming Languages:**")
-    st.markdown(
+        # st.write("**Programming Languages:**")
+        st.markdown(
         """
         <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
         <div style="text-align: center;">
@@ -372,8 +411,8 @@ def about_me():
         )
 
 # Cloud Computing
-    st.write("**Cloud Computing:**")
-    st.markdown(
+        # st.write("**Cloud Computing:**")
+        st.markdown(
         """
         <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
         <div style="text-align: center;">
@@ -393,69 +432,75 @@ def about_me():
         unsafe_allow_html=True
         )
 
+# About Me Section
 
-# def education():
-#     st.title("Education", anchor="education")
-    
-#     # Lehigh University
-#     st.write("### Lehigh University, United States")
-#     lehigh_logo_url = "https://collegeaim.org/wp-content/uploads/2021/08/Lehigh-University-logo.png"
+# Skills Section with Increased Size
+# def skills():
+#     st.subheader('<h2 style="font-size: 22px;">Technical Skills</h2>', unsafe_allow_html=True)
 #     st.markdown(
-#         f"""
-#         <div style="display: flex; align-items: center;">
-#             <img src="{lehigh_logo_url}" width="50" style="margin-right: 10px;">
-#             <span><strong>MS Financial Engineering</strong> (Aug 2023 - May 2025)</span>
+#         """
+#         <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 25px; font-size: 16px;">
+#             <div style="text-align: center;">
+#                 <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Apache_Spark_logo.svg" width="60">
+#                 <p>Apache Spark</p>
+#             </div>
+#             <div style="text-align: center;">
+#                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/926px-Kubernetes_logo_without_workmark.svg.png" width="60">
+#                 <p>Kubernetes</p>
+#             </div>
+#             <div style="text-align: center;">
+#                 <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Hadoop_logo_new.svg" width="60">
+#                 <p>Hadoop</p>
+#             </div>
+#             <div style="text-align: center;">
+#                 <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Cassandra_logo.svg" width="60">
+#                 <p>Apache Cassandra</p>
+#             </div>
 #         </div>
 #         """,
-#         unsafe_allow_html=True,
+#         unsafe_allow_html=True
 #     )
 
-
-#     # Dr. Ambedkar Institute of Technology
-#     st.write("### Dr. Ambedkar Institute of Technology, India")
-#     ambedkar_logo_url = "https://www.getmycollege.com/image-upload/new-uploads/college/logo/dr-ambedkar-institute-of-technology-logo-406.jpg"
-#     st.markdown(
-#         f"""
-#         <div style="display: flex; align-items: center;">
-#             <img src="{ambedkar_logo_url}" width="50" style="margin-right: 10px;">
-#             <span><strong>Bachelor of Engineering in Computer Science</strong> (Aug 2016 - Sept 2020)</span>
-#         </div>
-#         """,
-#         unsafe_allow_html=True,
-#     )
+# # Call functions in the app
+# about_me()
+# skills()
 
 
 
 def professional_experience():
+    st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
     st.title("Professional Experience", anchor="professional-experience")
     
-    with st.expander("Trade Terminal, San Jose, \n United States"):
+    with st.expander("Trade Terminal (Crypto Currency Hedge Fund), San Jose, United States."):
         st.write("**Quantitative Research Intern**  \n_May 2024 - Present_")
         st.write("- Engineered a real-time NLP model for Reddit sentiment analysis to predict Binance listings using random classification and K-Means clustering, tracking 4000 crypto pairs across 70 exchanges by analyzing volume, market cap, and key metrics.")
         st.write("- Implemented and managed cross-asset volatility arbitrage strategies on perpetual and expiry futures contracts by conducting regression and detailed statistical analysis, generating trading signals on a minute-by-minute timeframe with a hit ratio of 67%.")
         st.write("- Analyzed order book structure and market microstructure using Kalman-Filtering to improve order execution in different liquidity environments, achieving 15% better trade settlement, reducing execution costs and slippage.")
         st.write("- Prototyped, optimized, and executed trading strategy over $200K in order volume, enhancing profitability with walk-forward & Bayesian techniques.")
 
-    with st.expander("Lehigh University, United States"):
+    with st.expander("Lehigh University, United States."):
         st.write("**Graduate Research Assistant**  \n_Jan 2024 - Present_")
         st.write("- Designed and implemented Vasicek and CIR models focusing on their stochastic process assumption and mean-reverting process using Python, conducting MLE-based parameter estimation, sensitivity analysis, and stress-testing for robust predictive power.")
         st.write("- Extracted, transformed, loaded (ETL) 30 years of FED Federal Open Market Committee (FOMC) data using Ray Dalio’s framework, employing ChatGPT API and advanced prompt engineering to classify data into regimes and assign sentiment scores based on market impact.")
         st.write("- Quantified FOMC sentiment with weighted scores, evaluating policy influence on sectors to drive portfolio adjustments, optimize allocation, and improve risk management.")
+        st.write("- Developed a Python simulation for option pricing using the Black-Scholes model, incorporating historical volatility data and creating a sensitivity analysis tool to assess the impact of Greeks (Delta, Gamma, Vega, Theta, and Rho) on valuation. ")
+        st.write("- Simulated systematic option trading portfolios for a non-dividend paying underlying ETF, incorporating event-based backtesting, resulting in a 1.3x improvement in Sharpe Ratio. ")
+        st.write("- Simulated Gamma Hedging strategies, optimizing across various hedging frequency across different timeframes in response to market trends. ")
 
-    with st.expander("HTTS - High Tech Trading System Fund, Switzerland and India"):
+    with st.expander("HTTS - High Tech Trading System Fund  (Societe General Family Office), Switzerland & India."):
         st.write("**Quantitative Research Analyst**  \n_Aug 2022 - Aug 2023_")
         st.write("- Developed multi-threaded data ingestion pipelines for 5,000+ equity assets, achieving 5x faster database updates. Automated daily reporting and built a visualization dashboard for 21 KPIs, aiding portfolio analysis and decision-making.")
         st.write("- Collaborated with portfolio managers to develop risk management frameworks, and implemented dynamic Value at Risk (VaR), reducing attributed capital by 4% across confidence intervals (95%, 99%) and time horizons (1-day, 10-day).")
-        st.write("- Contributed to the development of in-house backtesting platform and trading infrastructure, debugging critical features supporting live trading operations.")
-        st.write("- Applied Monte Carlo simulations and hierarchical risk parity for return forecasts to develop diversified portfolios, surpassing the S&P 500’s quarterly performance by 2% without relying on mean-variance optimization.")
+        st.write("- Contributed to development of in-house backtesting platform and trading infrastructure, debugging critical features supporting live trading operation.")
+        st.write("- Applied Monte Carlo simulations and hierarchical risk parity for return forecasts to develop diversified portfolios, surpassing the S&P 500’s quarterly performance by 2% without relying on mean-variance optimization. .")
 
-    with st.expander("Algorithma, Bangalore, India"):
+    with st.expander("Algorithma (Prop Trading Firm),  Bangalore, India."):
         st.write("**Quantitative Research Analyst**  \n_Aug 2022 - Aug 2023_")
         st.write("- Developed Python-based FIX protocol and AWS ELT data pipelines to enhance order flow and automate data management.")
         st.write("- Designed and backtested 0-DTE algorithmic trading strategies on major Indian equity indices using position sizing, technical indicators, and stop-loss strategies, reducing capital exposure by 30% and boosting profitability by 15%.")
         st.write("- Engineered a real-time monitoring system using statistical analysis of unusual volume spikes, momentum shifts, and price patterns. Reduced drawdowns by 20% through optimized strike price selection and refined entry timing.")
 
-    with st.expander("Finominal, London (FinTech, Investment Research Tools)"):
+    with st.expander("Finominal (FinTech, Investment Research Tools), London."):
         st.write("**Quantitative Research Analyst**  \n_Aug 2022 - Aug 2023_")
         st.write("- Communicated closely with the stakeholders performing Market Research to conduct a peer review analysis on novel ETFs and Mutual Funds in the market based on the FAMA-French model and 11 different metrics.")
         st.write("- Developed a Volatility Optimizer tool that generates optimal portfolio weights based on targeted volatility and Sharpe ratio using mean-variance optimization, used to manage over 14 portfolios, improving risk management.")
@@ -465,6 +510,8 @@ def professional_experience():
 # Projects Section
 
 def projects():
+    st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
+
     st.title("Latest Works", anchor="projects")
     
     # Project 1
@@ -576,7 +623,22 @@ This project, titled "Fed-GPT: Translating Fedspeak," focuses on analyzing Feder
             """,
             unsafe_allow_html=True,
         )
-    
+        st.markdown(
+            """
+            <a href="http://nwags.com/" target="_blank" style="
+                display: inline-block;
+                margin-top: 10px;
+                padding: 10px 20px;
+                font-size: 14px;
+                font-weight: bold;
+                color: #457B9D;
+                border: 2px solid #457B9D;
+                border-radius: 25px;
+                text-decoration: none;
+            ">Visit Website</a>
+            """,
+            unsafe_allow_html=True,
+        )
     with col2:
         # Replace 'image_path' with your image file or a placeholder URL
         image_path = "https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/Fama_french_model.jpg"  # Ensure the file is correctly referenced in your directory
@@ -623,6 +685,7 @@ This Project provides a comprehensive guide to download historical stock data, a
 
 # Certifications Section
 def certifications():
+    st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
     st.title("Certifications", anchor="certifications")
     st.markdown(
         """
@@ -642,6 +705,7 @@ def certifications():
 
 # Extracurricular and Competitions Section
 def extracurricular():
+    st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
     st.title("Extracurricular & Competitions", anchor="extracurricular")
     st.write("Involved in several projects related to financial engineering, algorithmic trading competitions, and data science hackathons.")
 
@@ -657,7 +721,10 @@ def display_github_profile(username):
     st.write(f"Following: {profile_data['following']}")
     st.write(f"Profile: {profile_data['html_url']}")
 
+
+# Contact Me Section
 def contact_me():
+    st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
     st.markdown(
         """
         <h1 style="text-align: center; margin-top: 20px;">Contact Me</h1>
@@ -692,5 +759,5 @@ extracurricular()
 contact_me()
 
 
-# Contact Me Section
+
 
