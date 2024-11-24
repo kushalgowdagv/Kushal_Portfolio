@@ -574,13 +574,13 @@ def certifications():
     st.markdown(
         """
         - [Chartered Financial Analyst (CFA) Level 2](https://www.cfainstitute.org/en/programs/cfa)
-        - [EPAT (Algo Trading) from QuantInsti](https://www.quantinsti.com/epat)
+        - [EPAT (Algo Trading) from QuantInsti](https://certificates.quantinsti.com/530928df-d2b8-4d54-a012-6fe3e88d1620?key=987f968a891148f7255b6a0c7c53238d592b9e0387af1c1880d607a1d453b6af)
         - [Machine Learning Scientist from DataCamp](https://www.datacamp.com/statement-of-accomplishment/track/8f59e3375605cd06e0e0696942bfd90e0d208467?raw=1)
-        - [Data Scientist from DataCamp](https://www.datacamp.com/statement-of-accomplishment/track/8f59e3375605cd06e0e0696942bfd90e0d208467?raw=1)
-        - [Applied Finance](https://akunacapital.com/)
-        - [Options 101 from Akuna Capital](https://akunacapital.com/)
-        - [Options 201 from Akuna Capital](https://akunacapital.com/)
-        - [Financial markets from Yale University](https://akunacapital.com/)
+        - [Data Scientist from DataCamp](https://www.datacamp.com/statement-of-accomplishment/track/5ced062426634ec74621ea03b54bd94a7b7a8329?raw=1)
+        - [Applied Finance](https://www.datacamp.com/completed/statement-of-accomplishment/track/cb86389e8984562d8c92f1435d0bc09e8bb23d22)
+        - [Options 101 from Akuna Capital](https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/download.jpeg)
+        - [Options 201 from Akuna Capital](https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/1701212815179.jpg)
+        - [Financial markets from Yale University](https://www.coursera.org/account/accomplishments/verify/GSBJPGB8QP2U?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course)
         - [Bloomberg Market Concepts](https://portal.bloombergforeducation.com/certificates/NstRvdswhPocLdynjmR5jfNp)
         """,
         unsafe_allow_html=True
