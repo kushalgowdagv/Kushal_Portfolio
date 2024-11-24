@@ -149,51 +149,86 @@ def about_me():
 
     with col2:
 
-        st.markdown(
-            """
-            **Kushal Gowda** is a **Quantitative Researcher** and **Developer** with hands-on expertise in **quantitative trading**, **algorithmic strategies**, and **risk management**. 
-            He brings a solid background in **statistical arbitrage**, **NLP sentiment analysis**, and **market risk modeling** from his recent work as a **Quantitative Research Intern** .
+        # st.markdown(
+        #     """
+        #     **Kushal Gowda** is a **Quantitative Researcher** and **Developer** with hands-on expertise in **quantitative trading**, **algorithmic strategies**, and **risk management**. 
+        #     He brings a solid background in **statistical arbitrage**, **NLP sentiment analysis**, and **market risk modeling** from his recent work as a **Quantitative Research Intern** .
 
-            Kushal is currently pursuing a **Master’s in Financial Engineering** at **Lehigh University** and **Chartered Financial Analyst (CFA)** Level III Candidate, specializing in **derivatives pricing**, **stochastic processes**, and **portfolio optimization**.
-            His professional journey includes notable roles at institutions like **HTTS - High Tech Trading System Fund** and **Finominal**, focusing on **equity portfolio optimization**, **dynamic VaR implementations**, 
-            and the development of **volatility-optimized tools**.
+        #     Kushal is currently pursuing a **Master’s in Financial Engineering** at **Lehigh University** and **Chartered Financial Analyst (CFA)** Level III Candidate, specializing in **derivatives pricing**, **stochastic processes**, and **portfolio optimization**.
+        #     His professional journey includes notable roles at institutions like **HTTS - High Tech Trading System Fund** and **Finominal**, focusing on **equity portfolio optimization**, **dynamic VaR implementations**, 
+        #     and the development of **volatility-optimized tools**.
 
-            Beyond finance, Kushal holds certifications in **algorithmic trading**, **data science**, and **machine learning**. His educational background in **Computer Science** from 
-            **Dr. Ambedkar Institute of Technology** further supports his diverse technical capabilities. Eager to innovate in the quantitative finance domain, 
-            Kushal combines his passion for **technology** with an **analytical approach** to deliver impactful solutions.
-            """,
-            unsafe_allow_html=True
-        )
+        #     Beyond finance, Kushal holds certifications in **algorithmic trading**, **data science**, and **machine learning**. His educational background in **Computer Science** from 
+        #     **Dr. Ambedkar Institute of Technology** further supports his diverse technical capabilities. Eager to innovate in the quantitative finance domain, 
+        #     Kushal combines his passion for **technology** with an **analytical approach** to deliver impactful solutions.
+        #     """,
+        #     unsafe_allow_html=True
+        # )
+    #     st.title("Education", anchor="education")
+    
+    # # Lehigh University
+    #     st.write("### Lehigh University, United States")
+    #     lehigh_logo_url = "https://collegeaim.org/wp-content/uploads/2021/08/Lehigh-University-logo.png"
+    #     st.markdown(
+    #         f"""
+    #         <div style="display: flex; align-items: center;">
+    #             <img src="{lehigh_logo_url}" width="50" style="margin-right: 10px;">
+    #             <span><strong>MS Financial Engineering</strong> (Aug 2023 - May 2025)</span>
+    #         </div>
+    #         """,
+    #         unsafe_allow_html=True,
+    #     )
+    # # CFA 
+    #     st.write("### Chartered Financial Analyst Society(CFA), USA")
+    #     cfa_url = "https://higherlogicdownload.s3.amazonaws.com/CFAI/bdc5586b-297b-4536-bd76-5bfa158a0b36/UploadedImages/CFA_Institute_Logo_RGB.png"
+    #     st.markdown(
+    #         f"""
+    #         <div style="display: flex; align-items: center;">
+    #             <img src="{cfa_url}" width="50" style="margin-right: 10px;">
+    #             <span><strong>CFA Level 1 and Level 2 passed with abouve 90th percentile</strong> (Aug 2016 - Sept 2020)</span>
+    #         </div>
+    #         """,
+    #         unsafe_allow_html=True,
+    #     )
+
+    # # Dr. Ambedkar Institute of Technology
+    #     st.write("### Dr. Ambedkar Institute of Technology, India")
+    #     ambedkar_logo_url = "https://www.getmycollege.com/image-upload/new-uploads/college/logo/dr-ambedkar-institute-of-technology-logo-406.jpg"
+    #     st.markdown(
+    #         f"""
+    #         <div style="display: flex; align-items: center;">
+    #             <img src="{ambedkar_logo_url}" width="50" style="margin-right: 10px;">
+    #             <span><strong>Bachelor of Engineering in Computer Science</strong> (Aug 2016 - Sept 2020)</span>
+    #         </div>
+    #         """,
+    #         unsafe_allow_html=True,
+    #     )
         st.title("Education", anchor="education")
     
     # Lehigh University
-        st.write("### Lehigh University, United States")
-        lehigh_logo_url = "https://collegeaim.org/wp-content/uploads/2021/08/Lehigh-University-logo.png"
         st.markdown(
-            f"""
-            <div style="display: flex; align-items: center;">
-                <img src="{lehigh_logo_url}" width="50" style="margin-right: 10px;">
-                <span><strong>MS Financial Engineering</strong> (Aug 2023 - May 2025)</span>
-            </div>
-            """,
-            unsafe_allow_html=True,
+            """
+            ### <u>Lehigh University, United States</u>
+            **MS Financial Engineering**  
+            *Aug 2023 - May 2025*
+            """, unsafe_allow_html=True
         )
-
-
-    # Dr. Ambedkar Institute of Technology
-        st.write("### Dr. Ambedkar Institute of Technology, India")
-        ambedkar_logo_url = "https://www.getmycollege.com/image-upload/new-uploads/college/logo/dr-ambedkar-institute-of-technology-logo-406.jpg"
+    
+    # Chartered Financial Analyst (CFA)
         st.markdown(
-            f"""
-            <div style="display: flex; align-items: center;">
-                <img src="{ambedkar_logo_url}" width="50" style="margin-right: 10px;">
-                <span><strong>Bachelor of Engineering in Computer Science</strong> (Aug 2016 - Sept 2020)</span>
-            </div>
-            """,
-            unsafe_allow_html=True,
+            """
+            ### <u>Chartered Financial Analyst Society (CFA), USA</u>
+            **CFA Level 1 and Level 2 passed with above 90th percentile**  
+            *2016 - 2020*
+            """, unsafe_allow_html=True
         )
-
-
+        st.markdown(
+            """
+            ### <u>Dr. Ambedkar Institute of Technology, India</u>
+            **Bachelor of Engineering in Computer Science**  
+            *Aug 2016 - Sept 2020*
+            """, unsafe_allow_html=True
+        )
 # Skills Section with Organized Headings and Icons
     st.subheader("Technical Skills")
 # Big Data and Analytics
