@@ -2,12 +2,68 @@
 import streamlit as st
 from PIL import Image
 import requests
+# st.markdown(
+#     """
+#     <style>
+#     /* Set background color to white */
+#     body {
+#         background-color: white;
+#     }
+
+#     /* Adjust column widths and image sizes based on screen size */
+#     @media (max-width: 768px) {
+#         .profile-image {
+#             width: 100px !important;
+#         }
+#         .sidebar-icons img {
+#             width: 20px !important;
+#         }
+#     }
+#     @media (min-width: 769px) {
+#         .profile-image {
+#             width: 150px !important;
+#         }
+#         .sidebar-icons img {
+#             width: 30px !important;
+#         }
+#     }
+#     </style>
+#     """,
+#     unsafe_allow_html=True,
+# )
+# Custom CSS Styling
 st.markdown(
     """
     <style>
-    /* Set background color to white */
+    /* Set overall body styling */
     body {
+        background: linear-gradient(to bottom right, #f9f9f9, #eaeaea);
+        color: #333;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /* Add shadow and border-radius to sections */
+    .section {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 8px;
         background-color: white;
+        margin-bottom: 20px;
+    }
+
+    /* Hover effects for buttons and links */
+    a:hover {
+        color: #457B9D !important;
+    }
+    .button:hover {
+        transform: scale(1.05);
+        transition: transform 0.2s ease;
+    }
+
+    /* Sidebar customization */
+    .sidebar-icons img:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
     }
 
     /* Adjust column widths and image sizes based on screen size */
@@ -15,23 +71,16 @@ st.markdown(
         .profile-image {
             width: 100px !important;
         }
-        .sidebar-icons img {
-            width: 20px !important;
-        }
     }
     @media (min-width: 769px) {
         .profile-image {
             width: 150px !important;
-        }
-        .sidebar-icons img {
-            width: 30px !important;
         }
     }
     </style>
     """,
     unsafe_allow_html=True,
 )
-
 # Sidebar for navigation with hyperlinks
 st.sidebar.title("Kushal Gowda G V")
 st.sidebar.markdown("[About Me](#about-me)")
@@ -50,23 +99,25 @@ email_icon = "https://cdn-icons-png.flaticon.com/512/732/732200.png"
 # Using st.markdown with HTML to include hyperlinks with images
 st.sidebar.markdown(
     f"""
-    <div style="display: flex; align-items: center;">
+    <div style="display: flex; justify-content: space-evenly; align-items: center;">
         <a href="https://github.com/kushalgowdagv" target="_blank">
-            <img src="{github_icon}" width="30" style="margin: 0 10px;">
+            <img src="{github_icon}" width="30">
         </a>
         <a href="mailto:kushalgowdagv@gmail.com" target="_blank">
-            <img src="{email_icon}" width="30" style="margin: 0 10px;">
+            <img src="{email_icon}" width="30">
         </a>
         <a href="https://www.linkedin.com/in/kushalgowdagv/" target="_blank">
-            <img src="{linkedin_icon}" width="30" style="margin: 0 10px;">
+            <img src="{linkedin_icon}" width="30">
         </a>
     </div>
     """,
     unsafe_allow_html=True
 )
 
+
 # About Me Section
 def about_me():
+    st.markdown('<div class="section">', unsafe_allow_html=True)
     st.title("About Kushal Gowda", anchor="about-me")
     
     # Creating two columns for layout
