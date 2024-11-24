@@ -148,20 +148,7 @@ def about_me():
     
 
     with col2:
-    # Certifications
-    #     st.subheader("Certifications")
-    #     st.write("Chartered Financial Analyst (CFA): Level 2 Passed")
-    #     st.write("Certifications in Algo Trading (EPAT), Data Science (DataCamp), and more.")
-    
-    # # Education Section
-    #     st.subheader("Education")
-    #     st.write("**Lehigh University, United States**")
-    #     st.write("M.S. in Financial Engineering (Aug 2023 - May 2025)")
-    
-    #     st.write("**Dr. Ambedkar Institute of Technology, India**")
-    #     st.write("Bachelor of Engineering in Computer Science (Aug 2016 - Sept 2020)")
 
-        # Updated Certification and Education Content
         st.markdown(
             """
             **Kushal Gowda** is a **Quantitative Researcher** and **Developer** with hands-on expertise in **quantitative trading**, **algorithmic strategies**, and **risk management**. 
@@ -171,15 +158,41 @@ def about_me():
             His professional journey includes notable roles at institutions like **HTTS - High Tech Trading System Fund** and **Finominal**, focusing on **equity portfolio optimization**, **dynamic VaR implementations**, 
             and the development of **volatility-optimized tools**.
 
-            With a technical foundation in **Python**, **C++**, **SQL**, and various **trading platforms**, he has executed sophisticated **quantitative strategies** and **risk analysis frameworks** to enhance **profitability** 
-            and **portfolio resilience**.
-
             Beyond finance, Kushal holds certifications in **algorithmic trading**, **data science**, and **machine learning**. His educational background in **Computer Science** from 
             **Dr. Ambedkar Institute of Technology** further supports his diverse technical capabilities. Eager to innovate in the quantitative finance domain, 
             Kushal combines his passion for **technology** with an **analytical approach** to deliver impactful solutions.
             """,
             unsafe_allow_html=True
         )
+        st.title("Education", anchor="education")
+    
+    # Lehigh University
+        st.write("### Lehigh University, United States")
+        lehigh_logo_url = "https://collegeaim.org/wp-content/uploads/2021/08/Lehigh-University-logo.png"
+        st.markdown(
+            f"""
+            <div style="display: flex; align-items: center;">
+                <img src="{lehigh_logo_url}" width="50" style="margin-right: 10px;">
+                <span><strong>MS Financial Engineering</strong> (Aug 2023 - May 2025)</span>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+
+    # Dr. Ambedkar Institute of Technology
+        st.write("### Dr. Ambedkar Institute of Technology, India")
+        ambedkar_logo_url = "https://www.getmycollege.com/image-upload/new-uploads/college/logo/dr-ambedkar-institute-of-technology-logo-406.jpg"
+        st.markdown(
+            f"""
+            <div style="display: flex; align-items: center;">
+                <img src="{ambedkar_logo_url}" width="50" style="margin-right: 10px;">
+                <span><strong>Bachelor of Engineering in Computer Science</strong> (Aug 2016 - Sept 2020)</span>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
 
 # Skills Section with Organized Headings and Icons
     st.subheader("Technical Skills")
@@ -348,11 +361,6 @@ def education():
             <img src="{lehigh_logo_url}" width="50" style="margin-right: 10px;">
             <span><strong>MS Financial Engineering</strong> (Aug 2023 - May 2025)</span>
         </div>
-        <ul>
-            <li>Financial Derivatives</li>
-            <li>Financial Engineering Practicum</li>
-            <li>Quantitative Risk Management</li>
-        </ul>
         """,
         unsafe_allow_html=True,
     )
