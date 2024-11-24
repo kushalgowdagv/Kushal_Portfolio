@@ -334,42 +334,36 @@ def education():
     st.markdown("[View GitHub Projects](https://github.com/kushalgowdagv)")
 
 
-# Professional Experience Section
+
 def professional_experience():
     st.title("Professional Experience", anchor="professional-experience")
-    st.write("### Trade Terminal, San Jose, United States")
-    st.write("**Quantitative Research Intern** (May 2024 - Present)")
-    st.write("- Engineered a real-time NLP model for Reddit sentiment analysis to predict Binance listings using random classification and K-Means clustering, tracking 4000 crypto pairs across 70 exchanges by analyzing volume, market cap, and key metrics. ")
-    st.write("- Implemented and managed cross-asset volatility arbitrage strategies on perpetual and expiry futures contracts by conducting regression and detailed statistical analysis, generating trading signals on a minute-by-minute timeframe with a hit ratio of 67%. ")
-    st.write("- Analyzed order book structure and market microstructure using Kalman-Filtering to improve order execution in different liquidity environments, achieving 15% better trade settlement, reducing execution costs and slippage. ")
-    st.write("- Prototyped, optimized, and executed trading strategy over $200K in order volume, enhancing profitability with walk-forward & Bayesian techniques.")
+    
+    with st.expander("Trade Terminal, San Jose, United States - Quantitative Research Intern (May 2024 - Present)"):
+        st.write("- Engineered a real-time NLP model for Reddit sentiment analysis to predict Binance listings using random classification and K-Means clustering, tracking 4000 crypto pairs across 70 exchanges by analyzing volume, market cap, and key metrics.")
+        st.write("- Implemented and managed cross-asset volatility arbitrage strategies on perpetual and expiry futures contracts by conducting regression and detailed statistical analysis, generating trading signals on a minute-by-minute timeframe with a hit ratio of 67%.")
+        st.write("- Analyzed order book structure and market microstructure using Kalman-Filtering to improve order execution in different liquidity environments, achieving 15% better trade settlement, reducing execution costs and slippage.")
+        st.write("- Prototyped, optimized, and executed trading strategy over $200K in order volume, enhancing profitability with walk-forward & Bayesian techniques.")
 
-    st.write("### Lehigh University, United States")
-    st.write("**Graduate Research Assistant** (Jan 2024 - Present)")
-    st.write("- Designed and implemented Vasicek and CIR models focusing on their stochastic process assumption and mean-reverting process using Python, conducting MLE-based parameter estimation, sensitivity analysis, and stress-testing for robust predictive power. ")
-    st.write("- Extracted, transformed, loaded (ETL) 30 years of FED Federal Open Market Committee (FOMC) data using Ray Dalio’s framework, employing ChatGPT API and advanced prompt engineering to classify data into regimes and assign sentiment scores based on market impact. ")
-    st.write("- Quantified FOMC sentiment with weighted scores, evaluating policy influence on sectors to drive portfolio adjustments, optimize allocation, and improve risk management. ")
+    with st.expander("Lehigh University, United States - Graduate Research Assistant (Jan 2024 - Present)"):
+        st.write("- Designed and implemented Vasicek and CIR models focusing on their stochastic process assumption and mean-reverting process using Python, conducting MLE-based parameter estimation, sensitivity analysis, and stress-testing for robust predictive power.")
+        st.write("- Extracted, transformed, loaded (ETL) 30 years of FED Federal Open Market Committee (FOMC) data using Ray Dalio’s framework, employing ChatGPT API and advanced prompt engineering to classify data into regimes and assign sentiment scores based on market impact.")
+        st.write("- Quantified FOMC sentiment with weighted scores, evaluating policy influence on sectors to drive portfolio adjustments, optimize allocation, and improve risk management.")
 
+    with st.expander("HTTS - High Tech Trading System Fund, Switzerland and India - Quantitative Research Analyst (Aug 2022 - Aug 2023)"):
+        st.write("- Developed multi-threaded data ingestion pipelines for 5,000+ equity assets, achieving 5x faster database updates. Automated daily reporting and built a visualization dashboard for 21 KPIs, aiding portfolio analysis and decision-making.")
+        st.write("- Collaborated with portfolio managers to develop risk management frameworks, and implemented dynamic Value at Risk (VaR), reducing attributed capital by 4% across confidence intervals (95%, 99%) and time horizons (1-day, 10-day).")
+        st.write("- Contributed to the development of in-house backtesting platform and trading infrastructure, debugging critical features supporting live trading operations.")
+        st.write("- Applied Monte Carlo simulations and hierarchical risk parity for return forecasts to develop diversified portfolios, surpassing the S&P 500’s quarterly performance by 2% without relying on mean-variance optimization.")
 
-    st.write("### HTTS - High Tech Trading System Fund (Societe General Family Office), Switzerland and India")
-    st.write("**Quantitative Research Analyst** (Aug 2022 - Aug 2023)")
-    st.write("- Developed multi-threaded data ingestion pipelines for 5,000+ equity assets, achieving 5x faster database updates. Automated daily reporting and built a visualisation dashboard 21 KPIs, aiding portfolio analysis and decision-making.  ")
-    st.write("- Collaborated with portfolio managers to develop risk management frameworks, and implemented dynamic Value at Risk (VaR), reducing attributed capital by 4% across confidence intervals (95%, 99%) and time horizons (1-day, 10-day). ")
-    st.write("- Contributed to development of in-house backtesting platform and trading infrastructure, debugging critical features supporting live trading operation. ")
-    st.write("- Applied Monte Carlo simulations and hierarchical risk parity for return forecasts to develop diversified portfolios, surpassing the S&P 500’s quarterly performance by 2% without relying on mean-variance optimization. ")
+    with st.expander("Algorithma, Bangalore, India - Quantitative Research Analyst (Aug 2022 - Aug 2023)"):
+        st.write("- Developed Python-based FIX protocol and AWS ELT data pipelines to enhance order flow and automate data management.")
+        st.write("- Designed and backtested 0-DTE algorithmic trading strategies on major Indian equity indices using position sizing, technical indicators, and stop-loss strategies, reducing capital exposure by 30% and boosting profitability by 15%.")
+        st.write("- Engineered a real-time monitoring system using statistical analysis of unusual volume spikes, momentum shifts, and price patterns. Reduced drawdowns by 20% through optimized strike price selection and refined entry timing.")
 
-    st.write("### Algorithma (Prop Trading Firm), Bangalore-India")
-    st.write("**Quantitative Research Analyst** (Aug 2022 - Aug 2023)")
-    st.write("- Developed Python-based FIX protocol and AWS ELT data pipelines to enhance order flow and automate data management. ")
-    st.write("- Designed and backtested 0-DTE algorithmic trading strategies on major Indian equity indices using position sizing, technical indicators, and stoploss strategies, reducing capital exposure by 30% and boosting profitability by 15%. ")
-    st.write("- Engineered a real-time monitoring system for using statistical analysis of unusual volume spikes, momentum shifts, and price patterns. Reduced drawdowns by 20% through optimized strike price selection and refined entry timing. ")
-
-    st.write("### Finominal, London (FinTech, Investment Research Tools), London")
-    st.write("**Quantitative Research Analyst** (Aug 2022 - Aug 2023)")
-    st.write("- Communicated closely with the stakeholders performing Market Research to conduct a peer review analysis on novel ETFs and Mutual Funds in the market based on the FAMA-French model and 11 different metrics.  ")
-    st.write("- Developed a Volatility Optimizer tool that generates optimal portfolio weights based on targeted volatility and Sharpe ratio using mean-variance optimization, used to manage over 14 portfolios, improving risk management. ")
-    st.write("- Formulated Inflation Hedger tool using Thiel-Sen and OLS models to identify high inflation-beta assets amongst 20,000 tickers, optimizing portfolio exposure to inflation and enhancing risk-adjusted returns while reducing volatility.  ")
-
+    with st.expander("Finominal, London (FinTech, Investment Research Tools) - Quantitative Research Analyst (Aug 2022 - Aug 2023)"):
+        st.write("- Communicated closely with the stakeholders performing Market Research to conduct a peer review analysis on novel ETFs and Mutual Funds in the market based on the FAMA-French model and 11 different metrics.")
+        st.write("- Developed a Volatility Optimizer tool that generates optimal portfolio weights based on targeted volatility and Sharpe ratio using mean-variance optimization, used to manage over 14 portfolios, improving risk management.")
+        st.write("- Formulated an Inflation Hedger tool using Thiel-Sen and OLS models to identify high inflation-beta assets among 20,000 tickers, optimizing portfolio exposure to inflation and enhancing risk-adjusted returns while reducing volatility.")
 # Projects Section
 # def projects():
     # st.title("Projects", anchor="projects")
@@ -407,7 +401,22 @@ parameters like Delta, Gamma, Theta, Vega, and others evolve with respect to cha
             """,
             unsafe_allow_html=True,
         )
-    
+        st.markdown(
+            """
+            <a href="https://kushalgowdagv-pricing-models-streamlit-app-ucutms.streamlit.app/" target="_blank" style="
+                display: inline-block;
+                margin-top: 10px;
+                padding: 10px 20px;
+                font-size: 14px;
+                font-weight: bold;
+                color: #457B9D;
+                border: 2px solid #457B9D;
+                border-radius: 25px;
+                text-decoration: none;
+            ">Visit Website</a>
+            """,
+            unsafe_allow_html=True,
+        )
     with col2:
         # Replace 'image_path' with your image file or a placeholder URL
         image_path = "https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/Binomial_tree_Forecasting.jpg"  # Ensure the file is correctly referenced in your directory
@@ -416,21 +425,19 @@ parameters like Delta, Gamma, Theta, Vega, and others evolve with respect to cha
     # Add spacing for better readability
     st.markdown("<br>", unsafe_allow_html=True)
 
-    # You can replicate the above layout for additional projects
-    st.title("Latest Works", anchor="projects")
-    
     # Project 2
-    st.markdown("#### Assessment of Earnings Release on Stock Price Movement")
+    st.markdown("#### FAMA French Modelling")
     col1, col2 = st.columns([2, 1])  # Adjust column ratios as needed
     
     with col1:
         st.write("""
-        Built a stock analysis tool in C++, retrieved stock data using Libcurl API, 
-        analyzed stock movement after earnings date announcement, and used Gnuplot for visualization.
+This project develops a fundamental factor model using ten factors:
+ 20-Day ADV, Growth, Volatility, Profitability, Dividend Yield, Value, Market Sensitivity, Medium-Term Momentum, Short-Term Momentum, and Liquidity.
+ The model aims to capture changing market conditions and improve portfolio efficiency.
         """)
         st.markdown(
             """
-            <a href="https://github.com/kushalgowdagv/Pricing_Models" target="_blank" style="
+            <a href="https://github.com/kushalgowdagv/FAMA_Factors_modelling" target="_blank" style="
                 display: inline-block;
                 padding: 10px 20px;
                 font-size: 14px;
@@ -446,26 +453,24 @@ parameters like Delta, Gamma, Theta, Vega, and others evolve with respect to cha
     
     with col2:
         # Replace 'image_path' with your image file or a placeholder URL
-        image_path = "data:image/png;base64,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"  # Ensure the file is correctly referenced in your directory
+        image_path = "https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/Fama_french_model.jpg"  # Ensure the file is correctly referenced in your directory
         st.image(image_path, use_column_width=True)
 
     # Add spacing for better readability
     st.markdown("<br>", unsafe_allow_html=True)
-
-    st.title("Latest Works", anchor="projects")
-    
+   
     # Project 3
-    st.markdown("#### Assessment of Earnings Release on Stock Price Movement")
+    st.markdown("#### FedGPT - LLM Based Analysis of FOMC Releases")
     col1, col2 = st.columns([2, 1])  # Adjust column ratios as needed
     
     with col1:
         st.write("""
-        Built a stock analysis tool in C++, retrieved stock data using Libcurl API, 
-        analyzed stock movement after earnings date announcement, and used Gnuplot for visualization.
+This project, titled "Fed-GPT: Translating Fedspeak," focuses on analyzing Federal Reserve communications through sentiment scoring and advanced language model techniques.
+ It provides insights into economic indicators, sentiment correlations, and actionable strategies for financial analysis.
         """)
         st.markdown(
             """
-            <a href="https://github.com/kushalgowdagv" target="_blank" style="
+            <a href="https://github.com/kushalgowdagv/FedGPT---LLM-Based-Analysis-of-FOMC-Releases/blob/main/FedGPT.pptx" target="_blank" style="
                 display: inline-block;
                 padding: 10px 20px;
                 font-size: 14px;
@@ -481,24 +486,24 @@ parameters like Delta, Gamma, Theta, Vega, and others evolve with respect to cha
     
     with col2:
         # Replace 'image_path' with your image file or a placeholder URL
-        image_path = "data:image/png;base64,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"  # Ensure the file is correctly referenced in your directory
+        image_path = "https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/Fama_french_model.jpg"  # Ensure the file is correctly referenced in your directory
         st.image(image_path, use_column_width=True)
 
     # Add spacing for better readability
     st.markdown("<br>", unsafe_allow_html=True)
 
     # Project 4
-    st.markdown("#### FedGPT - LLM Based Analysis of FOMC Releases")
+    st.markdown("#### Portfolio Optimization")
     col1, col2 = st.columns([2, 1])  # Adjust column ratios as needed
     
     with col1:
         st.write("""
-        Built a stock analysis tool in C++, retrieved stock data using Libcurl API, 
-        analyzed stock movement after earnings date announcement, and used Gnuplot for visualization.
+This Project provides a comprehensive guide to download historical stock data, analyze trends, and optimize investment portfolios using Python. Key features include data visualization, statistical analysis, and portfolio optimization with efficient frontier, Sharpe Ratio, and VaR.
+ Fully customizable for tickers and date ranges, it's ideal for financial research and decision-making.
         """)
         st.markdown(
             """
-            <a href="https://github.com/kushalgowdagv" target="_blank" style="
+            <a href="https://github.com/kushalgowdagv/Portfolio_Optimization" target="_blank" style="
                 display: inline-block;
                 padding: 10px 20px;
                 font-size: 14px;
@@ -514,20 +519,36 @@ parameters like Delta, Gamma, Theta, Vega, and others evolve with respect to cha
     
     with col2:
         # Replace 'image_path' with your image file or a placeholder URL
-        image_path = "data:image/png;base64,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"  # Ensure the file is correctly referenced in your directory
+        image_path = "https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/Portfolio_Oprimization.jpg"  # Ensure the file is correctly referenced in your directory
         st.image(image_path, use_column_width=True)
 
     # Add spacing for better readability
     st.markdown("<br>", unsafe_allow_html=True)
 
 # Certifications Section
+# def certifications():
+#     st.title("Certifications", anchor="certifications")
+#     st.write("- Chartered Financial Analyst (CFA) Level 2")
+#     st.write("- EPAT (Algo Trading) from QuantInsti")
+#     st.write("- Data Scientist and Machine Learning Scientist from DataCamp")
+#     st.write("- Options 101 and 201 from Akuna Capital")
+#     st.write("- Bloomberg Market Concepts")
+
+
+# Certifications Section
 def certifications():
     st.title("Certifications", anchor="certifications")
-    st.write("- Chartered Financial Analyst (CFA) Level 2")
-    st.write("- EPAT (Algo Trading) from QuantInsti")
-    st.write("- Data Scientist and Machine Learning Scientist from DataCamp")
-    st.write("- Options 101 and 201 from Akuna Capital")
-    st.write("- Bloomberg Market Concepts")
+    st.markdown(
+        """
+        - [Chartered Financial Analyst (CFA) Level 2](https://www.cfainstitute.org/en/programs/cfa)
+        - [EPAT (Algo Trading) from QuantInsti](https://www.quantinsti.com/epat)
+        - [Data Scientist and Machine Learning Scientist from DataCamp](https://www.datacamp.com/)
+        - [Options 101 and 201 from Akuna Capital](https://akunacapital.com/)
+        - [Bloomberg Market Concepts](https://portal.bloombergforeducation.com/certificates/NstRvdswhPocLdynjmR5jfNp)
+        """,
+        unsafe_allow_html=True
+    )
+
 
 # Extracurricular and Competitions Section
 def extracurricular():
