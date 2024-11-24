@@ -2,36 +2,7 @@
 import streamlit as st
 from PIL import Image
 import requests
-# st.markdown(
-#     """
-#     <style>
-#     /* Set background color to white */
-#     body {
-#         background-color: white;
-#     }
 
-#     /* Adjust column widths and image sizes based on screen size */
-#     @media (max-width: 768px) {
-#         .profile-image {
-#             width: 100px !important;
-#         }
-#         .sidebar-icons img {
-#             width: 20px !important;
-#         }
-#     }
-#     @media (min-width: 769px) {
-#         .profile-image {
-#             width: 150px !important;
-#         }
-#         .sidebar-icons img {
-#             width: 30px !important;
-#         }
-#     }
-#     </style>
-#     """,
-#     unsafe_allow_html=True,
-# )
-# Custom CSS Styling
 st.markdown(
     """
     <style>
@@ -150,20 +121,6 @@ def about_me():
             """,
             unsafe_allow_html=True
         )
-    
-    # Resume Download Button
-        # st.subheader("Resume")
-        # resume_url = "https://drive.google.com/file/d/1JOnG4jDvGrL7CskoO7C3PJcAvDn8U0QI/view?usp=sharing"
-        # st.markdown(
-        #     f"""
-        #     <div style="display: flex; justify-content: center; margin-top: 10px;">
-        #         <  a href="{resume_url}" target="_blank">
-        #             <button style="padding: 10px 20px; font-size: 16px;">Download Resume</button>
-        #         </a>
-        #     </div>
-        #     """,
-        #     unsafe_allow_html=True
-        # )
 
 
 # Resume Download Button
@@ -241,17 +198,6 @@ def about_me():
             unsafe_allow_html=True
         )
 
-# # High Performance Computing (HPC) and Quantification
-#         st.write("**High Performance Computing (HPC) and Quantification:**")
-#         st.markdown(
-#             """
-#             <div style="display: flex; align-items: center;">
-#                 <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Intel_HPC_logo.svg" width="30" style="margin: 0 10px;"> HPC
-#                 <img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Quantitative_analysis_icon.svg" width="30" style="margin: 0 10px;"> Quantification
-#             </div>
-#             """,
-#             unsafe_allow_html=True
-#         )
 
 # Machine Learning and AI
         st.write("**Machine Learning and AI:**")
@@ -339,15 +285,6 @@ def about_me():
         )
 
 
-# Education Section
-# def education():
-#     st.title("Education", anchor="education")
-#     st.write("### Lehigh University, United States")
-#     st.write("**MS Financial Engineering** (Aug 2023 - May 2025)")
-#     st.write("- Financial Derivatives, Financial Engineering Practicum, Quantitative Risk Management, etc.")
-    
-#     st.write("### Dr. Ambedkar Institute of Technology, India")
-#     st.write("**Bachelor of Engineering in Computer Science** (Aug 2016 - Sept 2020)")
 def education():
     st.title("Education", anchor="education")
     
@@ -386,42 +323,74 @@ def education():
 
 
 
+# def professional_experience():
+#     st.title("Professional Experience", anchor="professional-experience")
+    
+#     with st.expander("Trade Terminal, San Jose, United States - Quantitative Research Intern (May 2024 - Present)"):
+#         st.write("- Engineered a real-time NLP model for Reddit sentiment analysis to predict Binance listings using random classification and K-Means clustering, tracking 4000 crypto pairs across 70 exchanges by analyzing volume, market cap, and key metrics.")
+#         st.write("- Implemented and managed cross-asset volatility arbitrage strategies on perpetual and expiry futures contracts by conducting regression and detailed statistical analysis, generating trading signals on a minute-by-minute timeframe with a hit ratio of 67%.")
+#         st.write("- Analyzed order book structure and market microstructure using Kalman-Filtering to improve order execution in different liquidity environments, achieving 15% better trade settlement, reducing execution costs and slippage.")
+#         st.write("- Prototyped, optimized, and executed trading strategy over $200K in order volume, enhancing profitability with walk-forward & Bayesian techniques.")
+
+#     with st.expander("Lehigh University, United States - Graduate Research Assistant (Jan 2024 - Present)"):
+#         st.write("- Designed and implemented Vasicek and CIR models focusing on their stochastic process assumption and mean-reverting process using Python, conducting MLE-based parameter estimation, sensitivity analysis, and stress-testing for robust predictive power.")
+#         st.write("- Extracted, transformed, loaded (ETL) 30 years of FED Federal Open Market Committee (FOMC) data using Ray Dalio’s framework, employing ChatGPT API and advanced prompt engineering to classify data into regimes and assign sentiment scores based on market impact.")
+#         st.write("- Quantified FOMC sentiment with weighted scores, evaluating policy influence on sectors to drive portfolio adjustments, optimize allocation, and improve risk management.")
+
+#     with st.expander("HTTS - High Tech Trading System Fund, Switzerland and India - Quantitative Research Analyst (Aug 2022 - Aug 2023)"):
+#         st.write("- Developed multi-threaded data ingestion pipelines for 5,000+ equity assets, achieving 5x faster database updates. Automated daily reporting and built a visualization dashboard for 21 KPIs, aiding portfolio analysis and decision-making.")
+#         st.write("- Collaborated with portfolio managers to develop risk management frameworks, and implemented dynamic Value at Risk (VaR), reducing attributed capital by 4% across confidence intervals (95%, 99%) and time horizons (1-day, 10-day).")
+#         st.write("- Contributed to the development of in-house backtesting platform and trading infrastructure, debugging critical features supporting live trading operations.")
+#         st.write("- Applied Monte Carlo simulations and hierarchical risk parity for return forecasts to develop diversified portfolios, surpassing the S&P 500’s quarterly performance by 2% without relying on mean-variance optimization.")
+
+#     with st.expander("Algorithma, Bangalore, India - Quantitative Research Analyst (Aug 2022 - Aug 2023)"):
+#         st.write("- Developed Python-based FIX protocol and AWS ELT data pipelines to enhance order flow and automate data management.")
+#         st.write("- Designed and backtested 0-DTE algorithmic trading strategies on major Indian equity indices using position sizing, technical indicators, and stop-loss strategies, reducing capital exposure by 30% and boosting profitability by 15%.")
+#         st.write("- Engineered a real-time monitoring system using statistical analysis of unusual volume spikes, momentum shifts, and price patterns. Reduced drawdowns by 20% through optimized strike price selection and refined entry timing.")
+
+#     with st.expander("Finominal, London (FinTech, Investment Research Tools) - Quantitative Research Analyst (Aug 2022 - Aug 2023)"):
+#         st.write("- Communicated closely with the stakeholders performing Market Research to conduct a peer review analysis on novel ETFs and Mutual Funds in the market based on the FAMA-French model and 11 different metrics.")
+#         st.write("- Developed a Volatility Optimizer tool that generates optimal portfolio weights based on targeted volatility and Sharpe ratio using mean-variance optimization, used to manage over 14 portfolios, improving risk management.")
+#         st.write("- Formulated an Inflation Hedger tool using Thiel-Sen and OLS models to identify high inflation-beta assets among 20,000 tickers, optimizing portfolio exposure to inflation and enhancing risk-adjusted returns while reducing volatility.")
+
 def professional_experience():
     st.title("Professional Experience", anchor="professional-experience")
     
-    with st.expander("Trade Terminal, San Jose, United States - Quantitative Research Intern (May 2024 - Present)"):
+    with st.expander("Trade Terminal, San Jose, \n United States"):
+        st.write("**Quantitative Research Intern**  \n_May 2024 - Present_")
         st.write("- Engineered a real-time NLP model for Reddit sentiment analysis to predict Binance listings using random classification and K-Means clustering, tracking 4000 crypto pairs across 70 exchanges by analyzing volume, market cap, and key metrics.")
         st.write("- Implemented and managed cross-asset volatility arbitrage strategies on perpetual and expiry futures contracts by conducting regression and detailed statistical analysis, generating trading signals on a minute-by-minute timeframe with a hit ratio of 67%.")
         st.write("- Analyzed order book structure and market microstructure using Kalman-Filtering to improve order execution in different liquidity environments, achieving 15% better trade settlement, reducing execution costs and slippage.")
         st.write("- Prototyped, optimized, and executed trading strategy over $200K in order volume, enhancing profitability with walk-forward & Bayesian techniques.")
 
-    with st.expander("Lehigh University, United States - Graduate Research Assistant (Jan 2024 - Present)"):
+    with st.expander("Lehigh University, United States"):
+        st.write("**Graduate Research Assistant**  \n_Jan 2024 - Present_")
         st.write("- Designed and implemented Vasicek and CIR models focusing on their stochastic process assumption and mean-reverting process using Python, conducting MLE-based parameter estimation, sensitivity analysis, and stress-testing for robust predictive power.")
         st.write("- Extracted, transformed, loaded (ETL) 30 years of FED Federal Open Market Committee (FOMC) data using Ray Dalio’s framework, employing ChatGPT API and advanced prompt engineering to classify data into regimes and assign sentiment scores based on market impact.")
         st.write("- Quantified FOMC sentiment with weighted scores, evaluating policy influence on sectors to drive portfolio adjustments, optimize allocation, and improve risk management.")
 
-    with st.expander("HTTS - High Tech Trading System Fund, Switzerland and India - Quantitative Research Analyst (Aug 2022 - Aug 2023)"):
+    with st.expander("HTTS - High Tech Trading System Fund, Switzerland and India"):
+        st.write("**Quantitative Research Analyst**  \n_Aug 2022 - Aug 2023_")
         st.write("- Developed multi-threaded data ingestion pipelines for 5,000+ equity assets, achieving 5x faster database updates. Automated daily reporting and built a visualization dashboard for 21 KPIs, aiding portfolio analysis and decision-making.")
         st.write("- Collaborated with portfolio managers to develop risk management frameworks, and implemented dynamic Value at Risk (VaR), reducing attributed capital by 4% across confidence intervals (95%, 99%) and time horizons (1-day, 10-day).")
         st.write("- Contributed to the development of in-house backtesting platform and trading infrastructure, debugging critical features supporting live trading operations.")
         st.write("- Applied Monte Carlo simulations and hierarchical risk parity for return forecasts to develop diversified portfolios, surpassing the S&P 500’s quarterly performance by 2% without relying on mean-variance optimization.")
 
-    with st.expander("Algorithma, Bangalore, India - Quantitative Research Analyst (Aug 2022 - Aug 2023)"):
+    with st.expander("Algorithma, Bangalore, India"):
+        st.write("**Quantitative Research Analyst**  \n_Aug 2022 - Aug 2023_")
         st.write("- Developed Python-based FIX protocol and AWS ELT data pipelines to enhance order flow and automate data management.")
         st.write("- Designed and backtested 0-DTE algorithmic trading strategies on major Indian equity indices using position sizing, technical indicators, and stop-loss strategies, reducing capital exposure by 30% and boosting profitability by 15%.")
         st.write("- Engineered a real-time monitoring system using statistical analysis of unusual volume spikes, momentum shifts, and price patterns. Reduced drawdowns by 20% through optimized strike price selection and refined entry timing.")
 
-    with st.expander("Finominal, London (FinTech, Investment Research Tools) - Quantitative Research Analyst (Aug 2022 - Aug 2023)"):
+    with st.expander("Finominal, London (FinTech, Investment Research Tools)"):
+        st.write("**Quantitative Research Analyst**  \n_Aug 2022 - Aug 2023_")
         st.write("- Communicated closely with the stakeholders performing Market Research to conduct a peer review analysis on novel ETFs and Mutual Funds in the market based on the FAMA-French model and 11 different metrics.")
         st.write("- Developed a Volatility Optimizer tool that generates optimal portfolio weights based on targeted volatility and Sharpe ratio using mean-variance optimization, used to manage over 14 portfolios, improving risk management.")
         st.write("- Formulated an Inflation Hedger tool using Thiel-Sen and OLS models to identify high inflation-beta assets among 20,000 tickers, optimizing portfolio exposure to inflation and enhancing risk-adjusted returns while reducing volatility.")
+
+
 # Projects Section
-# def projects():
-    # st.title("Projects", anchor="projects")
-    # st.write("### Volatility Optimizer Tool")
-    # st.write("- Developed a tool to generate optimal portfolio weights based on targeted volatility.")
-    # st.write("### Real-time NLP Model")
-    # st.write("- Engineered a model for Reddit sentiment analysis to predict Binance listings.")
+
 def projects():
     st.title("Latest Works", anchor="projects")
     
@@ -576,14 +545,7 @@ This Project provides a comprehensive guide to download historical stock data, a
     # Add spacing for better readability
     st.markdown("<br>", unsafe_allow_html=True)
 
-# Certifications Section
-# def certifications():
-#     st.title("Certifications", anchor="certifications")
-#     st.write("- Chartered Financial Analyst (CFA) Level 2")
-#     st.write("- EPAT (Algo Trading) from QuantInsti")
-#     st.write("- Data Scientist and Machine Learning Scientist from DataCamp")
-#     st.write("- Options 101 and 201 from Akuna Capital")
-#     st.write("- Bloomberg Market Concepts")
+
 
 
 # Certifications Section
@@ -618,6 +580,31 @@ def display_github_profile(username):
     st.write(f"Following: {profile_data['following']}")
     st.write(f"Profile: {profile_data['html_url']}")
 
+def contact_me():
+    st.markdown(
+        """
+        <h1 style="text-align: center; margin-top: 20px;">Contact Me</h1>
+
+        <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+            <a href="https://github.com/kushalgowdagv" target="_blank" style="margin-right: 15px;">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="40" title="GitHub">
+            </a>
+            <a href="mailto:kushalgowdagv@gmail.com" target="_blank" style="margin-right: 15px;">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" width="40" title="Email">
+            </a>
+            <a href="https://www.linkedin.com/in/kushalgowdagv/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="40" title="LinkedIn">
+            </a>
+        </div>
+        <p style="text-align: center; font-size: 16px; margin-top: 10px;">Feel free to connect with me on any of the platforms above!</p>
+        """,
+        unsafe_allow_html=True
+    )
+
+# Call the Contact Me Section at the end of your app
+
+
+
 # Display the sections based on anchor
 about_me()
 education()
@@ -625,10 +612,8 @@ professional_experience()
 projects()
 certifications()
 extracurricular()
+contact_me()
 
-# Display GitHub Profile
-username = 'kushalgowdagv'  # Replace with GitHub username
-display_github_profile(username)
 
-# Cloud Deployment Note
-st.write("This app is designed to be deployed on cloud platforms like Heroku, Streamlit Cloud, or AWS for easy access and demonstration.")
+# Contact Me Section
+
