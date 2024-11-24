@@ -8,8 +8,8 @@ st.markdown(
     <style>
     /* Set overall body styling */
     body {
-        background: linear-gradient(to bottom right, #f9f9f9, #eaeaea);
-        color: #333;
+        background-color: #ffffff;
+        color: #000000;
         font-family: 'Poppins', sans-serif;
     }
 
@@ -182,106 +182,157 @@ def about_me():
         )
 
 # Skills Section with Organized Headings and Icons
-        st.subheader("Technical Skills")
-
+    st.subheader("Technical Skills")
 # Big Data and Analytics
-        st.write("**Big Data and Analytics:**")
-        st.markdown(
-            """
-            <div style="display: flex; align-items: center;">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Apache_Spark_logo.svg" width="50" style="margin: 0 20px;"> Big Data Analytics
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/926px-Kubernetes_logo_without_workmark.svg.png" width="50" style="margin: 0 20px;"> Kubernetes
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Hadoop_logo_new.svg" width="50" style="margin: 0 20px;"> Hadoop
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Cassandra_logo.svg" width="50" style="margin: 0 20px;"> Apache Cassandra
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
-
+    st.write("**Big Data and Analytics:**")
+    st.markdown(
+        """
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
+        <div style="text-align: center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Apache_Spark_logo.svg" width="50">
+            <p>Apache Spark</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/926px-Kubernetes_logo_without_workmark.svg.png" width="50">
+            <p>Kubernetes</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Hadoop_logo_new.svg" width="50">
+            <p>Hadoop</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Cassandra_logo.svg" width="50">
+            <p>Apache Cassandra</p>
+        </div>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
 # Machine Learning and AI
-        st.write("**Machine Learning and AI:**")
-        st.markdown(
+    st.write("**Machine Learning and AI:**")
+    st.markdown(
             """
-            <div style="display: flex; align-items: center;">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg" width="50" style="margin: 0 20px;"> Keras
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/TensorFlow_logo.svg" width="50" style="margin: 0 20px;"> TensorFlow
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" width="50" style="margin: 0 20px;"> Scikit-Learn
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/PyTorch_logo_icon.svg" width="50" style="margin: 0 20px;"> PyTorch
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
+        <div style="text-align: center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg" width="50">
+            <p>Keras</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/TensorFlow_logo.svg" width="50">
+            <p>TensorFlow</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" width="50">
+            <p>Scikit-Learn</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/PyTorch_logo_icon.svg" width="50">
+            <p>PyTorch</p>
             </div>
-            """,
-            unsafe_allow_html=True
-        )
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
 # Databases and Data Engineering
-        st.write("**Databases and Data Engineering:**")
-        st.markdown(
-            """
-            <div style="display: flex; align-items: center;">
-                <img src="https://upload.wikimedia.org/wikipedia/en/d/dd/MySQL_logo.svg" width="50" style="margin: 0 20px;"> MySQL
-                <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Snowflake_Logo.svg" width="50" style="margin: 0 20px;"> Snowflake
-                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Sql_data_base_with_logo.svg" width="50" style="margin: 0 20px;"> SQL
-            </div>
-            """,
-            unsafe_allow_html=True
+    st.write("**Databases and Data Engineering:**")
+    st.markdown(
+        """
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
+        <div style="text-align: center;">
+            <img src="https://upload.wikimedia.org/wikipedia/en/d/dd/MySQL_logo.svg" width="50">
+            <p>MySQL</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Snowflake_Logo.svg" width="50">
+            <p>Snowflake</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Sql_data_base_with_logo.svg" width="50">
+            <p>SQL</p>
+        </div>
+        </div>
+        """,
+        unsafe_allow_html=True
         )
 
-# Quantitative Finance and Financial Modeling
-        st.write("**Financial Terminals:**")
-        st.markdown(
-            """
-            <div style="display: flex; align-items: center;">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Bloomberg_logo.svg" width="50" style="margin: 0 20px;"> Bloomberg Terminal
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Morningstar_Logo.svg" width="50" style="margin: 0 20px;"> Morning Star
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Refintiv_Logo.svg" width="50" style="margin: 0 20px;"> Rifinitiv
-                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Polygon_Blockchain_Matic_Logo.svg" width="50" style="margin: 0 20px;"> Polygon
-
-            </div>
-            """,
-            unsafe_allow_html=True
+# Financial Terminals
+    st.write("**Financial Terminals:**")
+    st.markdown(
+        """
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
+        <div style="text-align: center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Bloomberg_logo.svg" width="50">
+            <p>Bloomberg Terminal</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Morningstar_Logo.svg" width="50">
+            <p>Morning Star</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Refintiv_Logo.svg" width="50">
+            <p>Refinitiv</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Polygon_Blockchain_Matic_Logo.svg" width="50">
+            <p>Polygon</p>
+        </div>
+        </div>
+        """,
+        unsafe_allow_html=True
         )
 
-        st.write("**Brokers:**")
-        st.markdown(
-            """
-            <div style="display: flex; align-items: center;">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Interactive_Brokers_Logo_%282014%29.svg" width="50" style="margin: 0 20px;"> Interactive Broker
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Coinbase.svg" width="50" style="margin: 0 20px;"> Coinbase
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Binance_logo.svg" width="50" style="margin: 0 20px;"> Binance
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Zerodha_logo.svg" width="50" style="margin: 0 20px;"> Zerodha
-
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
-
-
-    # Programming Languages
-        st.write("**Programming Languages:**")
-        st.markdown(
-            """
-            <div style="display: flex; align-items: center;">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" width="50" style="margin: 0 20px;"> Python
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" width="50" style="margin: 0 20px;"> C++
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/R_logo.svg" width="50" style="margin: 0 20px;"> R
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" width="50" style="margin: 0 20px;"> MATLAB
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Java_Logo.svg" width="50" style="margin: 0 20px;"> Java
-            </div>
-            """,
-            unsafe_allow_html=True
+# Programming Languages
+    st.write("**Programming Languages:**")
+    st.markdown(
+        """
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
+        <div style="text-align: center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" width="50">
+            <p>Python</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" width="50">
+            <p>C++</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/R_logo.svg" width="50">
+            <p>R</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" width="50">
+            <p>MATLAB</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Java_Logo.svg" width="50">
+            <p>Java</p>
+        </div>
+        </div>
+        """,
+        unsafe_allow_html=True
         )
 
 # Cloud Computing
-        st.write("**Cloud Computing:**")
-        st.markdown(
-            """
-            <div style="display: flex; align-items: center;">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" width="50" style="margin: 0 20px;"> AWS
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Microsoft_Azure_Logo.svg" width="50" style="margin: 0 20px;"> Azure 
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg" width="50" style="margin: 0 20px;"> Docker 
-            </div>
-            """,
-            unsafe_allow_html=True
+    st.write("**Cloud Computing:**")
+    st.markdown(
+        """
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
+        <div style="text-align: center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" width="50">
+            <p>AWS</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Microsoft_Azure_Logo.svg" width="50">
+            <p>Microsoft Azure</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg" width="50">
+            <p>Docker</p>
+        </div>
+        </div>
+        """,
+        unsafe_allow_html=True
         )
 
 
@@ -305,7 +356,7 @@ def education():
         """,
         unsafe_allow_html=True,
     )
-    st.markdown("[View GitHub Projects](https://github.com/kushalgowdagv)")
+
 
     # Dr. Ambedkar Institute of Technology
     st.write("### Dr. Ambedkar Institute of Technology, India")
@@ -319,39 +370,8 @@ def education():
         """,
         unsafe_allow_html=True,
     )
-    st.markdown("[View GitHub Projects](https://github.com/kushalgowdagv)")
 
 
-
-# def professional_experience():
-#     st.title("Professional Experience", anchor="professional-experience")
-    
-#     with st.expander("Trade Terminal, San Jose, United States - Quantitative Research Intern (May 2024 - Present)"):
-#         st.write("- Engineered a real-time NLP model for Reddit sentiment analysis to predict Binance listings using random classification and K-Means clustering, tracking 4000 crypto pairs across 70 exchanges by analyzing volume, market cap, and key metrics.")
-#         st.write("- Implemented and managed cross-asset volatility arbitrage strategies on perpetual and expiry futures contracts by conducting regression and detailed statistical analysis, generating trading signals on a minute-by-minute timeframe with a hit ratio of 67%.")
-#         st.write("- Analyzed order book structure and market microstructure using Kalman-Filtering to improve order execution in different liquidity environments, achieving 15% better trade settlement, reducing execution costs and slippage.")
-#         st.write("- Prototyped, optimized, and executed trading strategy over $200K in order volume, enhancing profitability with walk-forward & Bayesian techniques.")
-
-#     with st.expander("Lehigh University, United States - Graduate Research Assistant (Jan 2024 - Present)"):
-#         st.write("- Designed and implemented Vasicek and CIR models focusing on their stochastic process assumption and mean-reverting process using Python, conducting MLE-based parameter estimation, sensitivity analysis, and stress-testing for robust predictive power.")
-#         st.write("- Extracted, transformed, loaded (ETL) 30 years of FED Federal Open Market Committee (FOMC) data using Ray Dalio’s framework, employing ChatGPT API and advanced prompt engineering to classify data into regimes and assign sentiment scores based on market impact.")
-#         st.write("- Quantified FOMC sentiment with weighted scores, evaluating policy influence on sectors to drive portfolio adjustments, optimize allocation, and improve risk management.")
-
-#     with st.expander("HTTS - High Tech Trading System Fund, Switzerland and India - Quantitative Research Analyst (Aug 2022 - Aug 2023)"):
-#         st.write("- Developed multi-threaded data ingestion pipelines for 5,000+ equity assets, achieving 5x faster database updates. Automated daily reporting and built a visualization dashboard for 21 KPIs, aiding portfolio analysis and decision-making.")
-#         st.write("- Collaborated with portfolio managers to develop risk management frameworks, and implemented dynamic Value at Risk (VaR), reducing attributed capital by 4% across confidence intervals (95%, 99%) and time horizons (1-day, 10-day).")
-#         st.write("- Contributed to the development of in-house backtesting platform and trading infrastructure, debugging critical features supporting live trading operations.")
-#         st.write("- Applied Monte Carlo simulations and hierarchical risk parity for return forecasts to develop diversified portfolios, surpassing the S&P 500’s quarterly performance by 2% without relying on mean-variance optimization.")
-
-#     with st.expander("Algorithma, Bangalore, India - Quantitative Research Analyst (Aug 2022 - Aug 2023)"):
-#         st.write("- Developed Python-based FIX protocol and AWS ELT data pipelines to enhance order flow and automate data management.")
-#         st.write("- Designed and backtested 0-DTE algorithmic trading strategies on major Indian equity indices using position sizing, technical indicators, and stop-loss strategies, reducing capital exposure by 30% and boosting profitability by 15%.")
-#         st.write("- Engineered a real-time monitoring system using statistical analysis of unusual volume spikes, momentum shifts, and price patterns. Reduced drawdowns by 20% through optimized strike price selection and refined entry timing.")
-
-#     with st.expander("Finominal, London (FinTech, Investment Research Tools) - Quantitative Research Analyst (Aug 2022 - Aug 2023)"):
-#         st.write("- Communicated closely with the stakeholders performing Market Research to conduct a peer review analysis on novel ETFs and Mutual Funds in the market based on the FAMA-French model and 11 different metrics.")
-#         st.write("- Developed a Volatility Optimizer tool that generates optimal portfolio weights based on targeted volatility and Sharpe ratio using mean-variance optimization, used to manage over 14 portfolios, improving risk management.")
-#         st.write("- Formulated an Inflation Hedger tool using Thiel-Sen and OLS models to identify high inflation-beta assets among 20,000 tickers, optimizing portfolio exposure to inflation and enhancing risk-adjusted returns while reducing volatility.")
 
 def professional_experience():
     st.title("Professional Experience", anchor="professional-experience")
@@ -555,8 +575,12 @@ def certifications():
         """
         - [Chartered Financial Analyst (CFA) Level 2](https://www.cfainstitute.org/en/programs/cfa)
         - [EPAT (Algo Trading) from QuantInsti](https://www.quantinsti.com/epat)
-        - [Data Scientist and Machine Learning Scientist from DataCamp](https://www.datacamp.com/)
-        - [Options 101 and 201 from Akuna Capital](https://akunacapital.com/)
+        - [Machine Learning Scientist from DataCamp](https://www.datacamp.com/statement-of-accomplishment/track/8f59e3375605cd06e0e0696942bfd90e0d208467?raw=1)
+        - [Data Scientist from DataCamp](https://www.datacamp.com/statement-of-accomplishment/track/8f59e3375605cd06e0e0696942bfd90e0d208467?raw=1)
+        - [Applied Finance](https://akunacapital.com/)
+        - [Options 101 from Akuna Capital](https://akunacapital.com/)
+        - [Options 201 from Akuna Capital](https://akunacapital.com/)
+        - [Financial markets from Yale University](https://akunacapital.com/)
         - [Bloomberg Market Concepts](https://portal.bloombergforeducation.com/certificates/NstRvdswhPocLdynjmR5jfNp)
         """,
         unsafe_allow_html=True
