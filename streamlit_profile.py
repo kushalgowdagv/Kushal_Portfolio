@@ -111,7 +111,8 @@ def about_me():
     # Left Column - Profile Image and Contact Email
     with col1:
         # Profile image
-        profile_image = Image.open(r"C:\\Users\\sagar\\OneDrive\\Documents\\GitHub\\Kushal_Portfolio\\assets\\images\\kush-profile-image.jpg")
+        # profile_image = Image.open(r"C:\\Users\\sagar\\OneDrive\\Documents\\GitHub\\Kushal_Portfolio\\assets\\images\\kush-profile-image.jpg")
+        profile_image = 'https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/kush-profile-image.jpg'
         st.image(profile_image, caption="Kushal Gowda", width=150)
         
         # Contact Information
@@ -492,13 +493,17 @@ This project, titled "Fed-GPT: Translating Fedspeak," focuses on analyzing Feder
     st.markdown("<br>", unsafe_allow_html=True)
 
     # Project 4
-    st.markdown("#### Portfolio Optimization")
+    st.markdown("#### Reinforcement learning for Trading on SPY(Long Only strategy)")
     col1, col2 = st.columns([2, 1])  # Adjust column ratios as needed
     
     with col1:
         st.write("""
-This Project provides a comprehensive guide to download historical stock data, analyze trends, and optimize investment portfolios using Python. Key features include data visualization, statistical analysis, and portfolio optimization with efficient frontier, Sharpe Ratio, and VaR.
- Fully customizable for tickers and date ranges, it's ideal for financial research and decision-making.
+This repository contains a project focused on Reinforcement Learning for financial market trading. The system operates with:
+
+Action: Whether to buy or sell a stock.
+Reward: Profit or loss obtained from the previous trade.
+State: Market conditions represented by price and indicator values.
+The project uses various machine learning tools and libraries to train an agent that learns optimal trading strategies based on historical market data.
         """)
         st.markdown(
             """
