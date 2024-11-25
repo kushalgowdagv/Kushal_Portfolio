@@ -94,103 +94,13 @@ st.sidebar.markdown(
 st.sidebar.markdown(
     """
     <div style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #ccc; font-style: italic; text-align: center;">
-        <p>"It is better to be approximately right than completely wrong."</p>
+        <p>"Results speak louder than words. Scroll down; they’re shouting."</p>
     </div>
     """,
     unsafe_allow_html=True
 )
 
-# About Me Section
-# def about_me():
-# # def about_me():
-#     st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
-#     # st.title("About Kushal Gowda", anchor="about-me")
-#     # Rest of the function
-#     st.title("About Kushal Gowda", anchor="about-me")
-    
-#     # Creating two columns for layout
-#     col1, col2 = st.columns([1, 2])
-    
-#     # Left Column - Profile Image and Contact Email
-#     with col1:
-#         # Profile image
-#         profile_image = Image.open(r"C:\\Users\\sagar\\OneDrive\\Documents\\GitHub\\Kushal_Portfolio\\assets\\images\\kush-profile-image.jpg")
-#         st.image(profile_image, caption="Kushal Gowda", width=150)
-        
-#         # Contact Information
-#         st.subheader("Contact")
-#         st.write("**Email:** kushalgowdagv@gmail.com")
 
-#         st.subheader("Badges")
-
-
-
-#         st.markdown(
-#             """
-#             <div style="display: flex; align-items: center;">
-#                 <a href="https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/90rm512v.png" target="_blank">
-#                     <img src="https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/90rm512v.png" width="100" style="margin: 0 10px;">
-#                 </a>
-#                 <a href="https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/wa41bvjd.png" target="_blank">
-#                     <img src="https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/wa41bvjd.png" width="100" style="margin: 0 10px;">
-#                 </a>
-#             </div>
-#             """,
-#             unsafe_allow_html=True
-#         )
-
-
-# # Resume Download Button
-#         st.subheader("Resume")
-#         resume_url = "https://drive.google.com/file/d/1JOnG4jDvGrL7CskoO7C3PJcAvDn8U0QI/view?usp=sharing"
-#         st.markdown(
-#             f"""
-#             <div style="display: flex; justify-content: center; margin-top: 10px;">
-#                 <a href="{resume_url}" target="_blank" style="
-#                     padding: 10px 20px;
-#                     font-size: 16px;
-#                     color: white;
-#                     background-color: #4CAF50;
-#                     text-decoration: none;
-#                     border-radius: 5px;
-#                     display: inline-block;
-#                     ">
-#                     Download Resume
-#                 </a>
-#             </div>
-#             """,
-#             unsafe_allow_html=True
-#         )
-
-    
-
-#     with col2:
-#         st.markdown("<h2>Education</h2>", unsafe_allow_html=True)
-
-#     # Lehigh University
-#         st.markdown(
-#             """
-#             ### <u>Lehigh University, United States</u>
-#             **MS Financial Engineering**  
-#             *Aug 2023 - May 2025*
-#             """, unsafe_allow_html=True
-#         )
-    
-#     # Chartered Financial Analyst (CFA)
-#         st.markdown(
-#             """
-#             ### <u>Chartered Financial Analyst Society (CFA), USA</u>
-#             **CFA Level 1 and Level 2 passed**  
-#             *2021 & 2022*
-#             """, unsafe_allow_html=True
-#         )
-#         st.markdown(
-#             """
-#             ### <u>Dr. Ambedkar Institute of Technology, India</u>
-#             **Bachelor of Engineering in Computer Science**  
-#             *Aug 2016 - Sept 2020*
-#             """, unsafe_allow_html=True
-#         )
 def about_me():
     st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
     st.title("About Kushal Gowda", anchor="about-me")
@@ -279,10 +189,10 @@ def about_me():
 
 
 # Skills Section with Organized Headings and Icons
-        st.subheader("Technical Skills")
+    st.subheader("Technical Skills")
 # Big Data and Analytics
         # st.write("**Big Data and Analytics:**")
-        st.markdown(
+    st.markdown(
         """
         <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
         <div style="text-align: center;">
@@ -301,16 +211,6 @@ def about_me():
             <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Cassandra_logo.svg" width="50">
             <p>Apache Cassandra</p>
         </div>
-        </div>
-        """,
-        unsafe_allow_html=True
-        )
-
-# Machine Learning and AI
-        # st.write("**Machine Learning and AI:**")
-        st.markdown(
-            """
-        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
         <div style="text-align: center;">
             <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg" width="50">
             <p>Keras</p>
@@ -327,16 +227,7 @@ def about_me():
             <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/PyTorch_logo_icon.svg" width="50">
             <p>PyTorch</p>
             </div>
-        </div>
-        """,
-        unsafe_allow_html=True
-        )
 
-# Databases and Data Engineering
-        # st.write("**Databases and Data Engineering:**")
-        st.markdown(
-        """
-        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
         <div style="text-align: center;">
             <img src="https://upload.wikimedia.org/wikipedia/en/d/dd/MySQL_logo.svg" width="50">
             <p>MySQL</p>
@@ -352,11 +243,11 @@ def about_me():
         </div>
         """,
         unsafe_allow_html=True
-        )
+    )
 
 # Financial Terminals
         # st.write("**Financial Terminals:**")
-        st.markdown(
+    st.markdown(
         """
         <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
         <div style="text-align: center;">
@@ -378,11 +269,11 @@ def about_me():
         </div>
         """,
         unsafe_allow_html=True
-        )
+    )
 
 # Programming Languages
         # st.write("**Programming Languages:**")
-        st.markdown(
+    st.markdown(
         """
         <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
         <div style="text-align: center;">
@@ -401,20 +292,7 @@ def about_me():
             <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" width="50">
             <p>MATLAB</p>
         </div>
-        <div style="text-align: center;">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Java_Logo.svg" width="50">
-            <p>Java</p>
-        </div>
-        </div>
-        """,
-        unsafe_allow_html=True
-        )
 
-# Cloud Computing
-        # st.write("**Cloud Computing:**")
-        st.markdown(
-        """
-        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
         <div style="text-align: center;">
             <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" width="50">
             <p>AWS</p>
@@ -430,41 +308,7 @@ def about_me():
         </div>
         """,
         unsafe_allow_html=True
-        )
-
-# About Me Section
-
-# Skills Section with Increased Size
-# def skills():
-#     st.subheader('<h2 style="font-size: 22px;">Technical Skills</h2>', unsafe_allow_html=True)
-#     st.markdown(
-#         """
-#         <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 25px; font-size: 16px;">
-#             <div style="text-align: center;">
-#                 <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Apache_Spark_logo.svg" width="60">
-#                 <p>Apache Spark</p>
-#             </div>
-#             <div style="text-align: center;">
-#                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/926px-Kubernetes_logo_without_workmark.svg.png" width="60">
-#                 <p>Kubernetes</p>
-#             </div>
-#             <div style="text-align: center;">
-#                 <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Hadoop_logo_new.svg" width="60">
-#                 <p>Hadoop</p>
-#             </div>
-#             <div style="text-align: center;">
-#                 <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Cassandra_logo.svg" width="60">
-#                 <p>Apache Cassandra</p>
-#             </div>
-#         </div>
-#         """,
-#         unsafe_allow_html=True
-#     )
-
-# # Call functions in the app
-# about_me()
-# skills()
-
+    )
 
 
 def professional_experience():
@@ -488,7 +332,7 @@ def professional_experience():
         st.write("- Simulated Gamma Hedging strategies, optimizing across various hedging frequency across different timeframes in response to market trends. ")
 
     with st.expander("HTTS - High Tech Trading System Fund  (Societe General Family Office), Switzerland & India."):
-        st.write("**Quantitative Research Analyst**  \n_Aug 2022 - Aug 2023_")
+        st.write("**Quantitative Research Analyst (Hybrid)**  \n_Aug 2022 - Aug 2023_")
         st.write("- Developed multi-threaded data ingestion pipelines for 5,000+ equity assets, achieving 5x faster database updates. Automated daily reporting and built a visualization dashboard for 21 KPIs, aiding portfolio analysis and decision-making.")
         st.write("- Collaborated with portfolio managers to develop risk management frameworks, and implemented dynamic Value at Risk (VaR), reducing attributed capital by 4% across confidence intervals (95%, 99%) and time horizons (1-day, 10-day).")
         st.write("- Contributed to development of in-house backtesting platform and trading infrastructure, debugging critical features supporting live trading operation.")
@@ -501,7 +345,7 @@ def professional_experience():
         st.write("- Engineered a real-time monitoring system using statistical analysis of unusual volume spikes, momentum shifts, and price patterns. Reduced drawdowns by 20% through optimized strike price selection and refined entry timing.")
 
     with st.expander("Finominal (FinTech, Investment Research Tools), London."):
-        st.write("**Quantitative Research Analyst**  \n_Aug 2022 - Aug 2023_")
+        st.write("**Quantitative Research Analyst (Remote)**  \n_Aug 2022 - Aug 2023_")
         st.write("- Communicated closely with the stakeholders performing Market Research to conduct a peer review analysis on novel ETFs and Mutual Funds in the market based on the FAMA-French model and 11 different metrics.")
         st.write("- Developed a Volatility Optimizer tool that generates optimal portfolio weights based on targeted volatility and Sharpe ratio using mean-variance optimization, used to manage over 14 portfolios, improving risk management.")
         st.write("- Formulated an Inflation Hedger tool using Thiel-Sen and OLS models to identify high inflation-beta assets among 20,000 tickers, optimizing portfolio exposure to inflation and enhancing risk-adjusted returns while reducing volatility.")
@@ -704,22 +548,63 @@ def certifications():
 
 
 # Extracurricular and Competitions Section
+# def extracurricular():
+#     st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
+#     st.title("Extracurricular & Competitions", anchor="extracurricular")
+#     st.write("Involved in several projects related to financial engineering, algorithmic trading competitions, and data science hackathons.")
+
 def extracurricular():
     st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
     st.title("Extracurricular & Competitions", anchor="extracurricular")
-    st.write("Involved in several projects related to financial engineering, algorithmic trading competitions, and data science hackathons.")
 
-# GitHub Integration to Display Profile
-def display_github_profile(username):
-    url = f"https://api.github.com/users/{username}"
-    response = requests.get(url)
-    profile_data = response.json()
-    
-    st.subheader(f"GitHub Profile: {profile_data['name']}")
-    st.write(f"Public Repos: {profile_data['public_repos']}")
-    st.write(f"Followers: {profile_data['followers']}")
-    st.write(f"Following: {profile_data['following']}")
-    st.write(f"Profile: {profile_data['html_url']}")
+    # India Club - Lehigh University
+    st.subheader("India Club - Lehigh University")
+    st.write("**Treasurer · Sep 2023 - Present**")
+    st.write(
+        """
+        - Coordinating and allocating finances for the organization of events by the Indian community.
+        - Organizing fundraisers for campaigns and drives.
+        """
+    )
+
+    # Scholars of Finance - Lehigh
+    st.subheader("Scholars of Finance - Lehigh")
+    st.write("**Coordinator · Aug 2023 - Present**")
+    st.write(
+        """
+        Associated with Lehigh University, supporting initiatives that combine finance education with ethical leadership.
+        """
+    )
+
+    # Rotaract Club
+    st.subheader("Rotaract Club")
+    st.write("**Coordinator**")
+    st.write(
+        """
+        The mission of Rotaract is to provide opportunities for personal development,
+        address the physical and social needs of communities, and promote better
+        relations between people worldwide through a framework of friendship.
+        """
+    )
+
+    # Competitions
+    st.subheader("Competitions & Achievements")
+    st.write(
+        """
+        - **WorldQuant - International Quant Competition**: Awarded Bronze Medal.
+        - **Bloomberg - Global Trading Competition**: Ranked in the Top 100 among 2,000 teams.
+        """
+    )
+
+    # Personal Interests
+    st.subheader("Personal Interests")
+    st.write(
+        """
+        - **Agriculture**: Passionate agriculturist involved in coconut, areca, and coffee plantations.
+        - **Fitness Enthusiast**: Enjoys running and lifting weights.
+        """
+    )
+
 
 
 # Contact Me Section
