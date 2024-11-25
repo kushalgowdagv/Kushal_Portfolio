@@ -502,6 +502,39 @@ This Project provides a comprehensive guide to download historical stock data, a
         """)
         st.markdown(
             """
+            <a href="https://github.com/kushalgowdagv/SPY_Longonly_Trading_using_Reinforcement_learning" target="_blank" style="
+                display: inline-block;
+                padding: 10px 20px;
+                font-size: 14px;
+                font-weight: bold;
+                color: #E63946;
+                border: 2px solid #E63946;
+                border-radius: 25px;
+                text-decoration: none;
+            ">GitHub</a>
+            """,
+            unsafe_allow_html=True,
+        )
+    
+    with col2:
+        # Replace 'image_path' with your image file or a placeholder URL
+        image_path = "https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/SPX_trading_RFE.jpg"  # Ensure the file is correctly referenced in your directory
+        st.image(image_path, use_column_width=True)
+
+    # Add spacing for better readability
+    st.markdown("<br>", unsafe_allow_html=True)
+
+    # Project 5
+    st.markdown("#### Portfolio Optimization")
+    col1, col2 = st.columns([2, 1])  # Adjust column ratios as needed
+    
+    with col1:
+        st.write("""
+This Project provides a comprehensive guide to download historical stock data, analyze trends, and optimize investment portfolios using Python. Key features include data visualization, statistical analysis, and portfolio optimization with efficient frontier, Sharpe Ratio, and VaR.
+ Fully customizable for tickers and date ranges, it's ideal for financial research and decision-making.
+        """)
+        st.markdown(
+            """
             <a href="https://github.com/kushalgowdagv/Portfolio_Optimization" target="_blank" style="
                 display: inline-block;
                 padding: 10px 20px;
@@ -547,98 +580,12 @@ def certifications():
     )
 
 
-# Extracurricular and Competitions Section
-# def extracurricular():
-#     st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
-#     st.title("Extracurricular & Competitions", anchor="extracurricular")
-#     st.write("Involved in several projects related to financial engineering, algorithmic trading competitions, and data science hackathons.")
 
-# def extracurricular():
-#     st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
-#     st.title("Extracurricular & Competitions", anchor="extracurricular")
-
-#     # India Club - Lehigh University
-#     st.subheader("India Club - Lehigh University")
-#     st.write("**Treasurer · Sep 2023 - Present**")
-#     st.write(
-#         """
-#         - Coordinating and allocating finances for the organization of events by the Indian community.
-#         - Organizing fundraisers for campaigns and drives.
-#         """
-#     )
-
-#     # Scholars of Finance - Lehigh
-#     st.subheader("Scholars of Finance - Lehigh")
-#     st.write("**Coordinator · Aug 2023 - Present**")
-#     st.write(
-#         """
-#         Associated with Lehigh University, supporting initiatives that combine finance education with ethical leadership.
-#         """
-#     )
-
-#     # Rotaract Club
-#     st.subheader("Rotaract Club")
-#     st.write("**Coordinator**")
-#     st.write(
-#         """
-#         The mission of Rotaract is to provide opportunities for personal development,
-#         address the physical and social needs of communities, and promote better
-#         relations between people worldwide through a framework of friendship.
-#         """
-#     )
-
-#     # Competitions
-#     st.subheader("Competitions & Achievements")
-#     st.write(
-#         """
-#         - **WorldQuant - International Quant Competition**: Awarded Bronze Medal.
-#         - **Bloomberg - Global Trading Competition**: Ranked in the Top 100 among 2,000 teams.
-#         """
-#     )
-
-#     # Personal Interests
-#     st.subheader("Personal Interests")
-#     st.write(
-#         """
-#         - **Agriculture**: Passionate agriculturist involved in coconut, areca, and coffee plantations.
-#         - **Fitness Enthusiast**: Enjoys running and lifting weights.
-#         """
-#     )
 
 def extracurricular():
     st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
     st.title("Extracurricular & Competitions", anchor="extracurricular")
 
-    # India Club - Lehigh University
-    # with st.expander("India Club - Lehigh University"):
-    #     st.write("**Treasurer · Sep 2023 - Present**")
-    #     st.write(
-    #         """
-    #         - Coordinating and allocating finances for the organization of events by the Indian community.
-    #         - Organizing fundraisers for campaigns and drives.
-    #         """
-    #     )
-
-    # # Scholars of Finance - Lehigh
-    # with st.expander("Scholars of Finance - Lehigh"):
-    #     st.write("**Coordinator · Aug 2023 - Present**")
-    #     st.write(
-    #         """
-    #         Associated with Lehigh University, supporting initiatives that combine finance education with ethical leadership.
-    #         """
-    #     )
-
-    # # Rotaract Club
-    # with st.expander("Rotaract Club"):
-    #     st.write("**Coordinator**")
-    #     st.write(
-    #         """
-    #         The mission of Rotaract is to provide opportunities for personal development,
-    #         address the physical and social needs of communities, and promote better
-    #         relations between people worldwide through a framework of friendship.
-    #         """
-    #     )
-# Combined Expander for Extracurricular Activities
     with st.expander("Extracurricular Activities"):
     # India Club - Lehigh University
         st.subheader("India Club - Lehigh University")
@@ -711,7 +658,7 @@ def contact_me():
         unsafe_allow_html=True
     )
 
-# Call the Contact Me Section at the end of your app
+
 
 
 
