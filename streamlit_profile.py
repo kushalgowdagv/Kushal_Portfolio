@@ -641,7 +641,7 @@ This project, titled "Fed-GPT: Translating Fedspeak," focuses on analyzing Feder
         )
     with col2:
         # Replace 'image_path' with your image file or a placeholder URL
-        image_path = "https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/Fama_french_model.jpg"  # Ensure the file is correctly referenced in your directory
+        image_path = "https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/Picture1.png"  # Ensure the file is correctly referenced in your directory
         st.image(image_path, use_column_width=True)
 
     # Add spacing for better readability
