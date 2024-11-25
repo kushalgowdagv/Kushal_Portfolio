@@ -553,58 +553,139 @@ def certifications():
 #     st.title("Extracurricular & Competitions", anchor="extracurricular")
 #     st.write("Involved in several projects related to financial engineering, algorithmic trading competitions, and data science hackathons.")
 
+# def extracurricular():
+#     st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
+#     st.title("Extracurricular & Competitions", anchor="extracurricular")
+
+#     # India Club - Lehigh University
+#     st.subheader("India Club - Lehigh University")
+#     st.write("**Treasurer · Sep 2023 - Present**")
+#     st.write(
+#         """
+#         - Coordinating and allocating finances for the organization of events by the Indian community.
+#         - Organizing fundraisers for campaigns and drives.
+#         """
+#     )
+
+#     # Scholars of Finance - Lehigh
+#     st.subheader("Scholars of Finance - Lehigh")
+#     st.write("**Coordinator · Aug 2023 - Present**")
+#     st.write(
+#         """
+#         Associated with Lehigh University, supporting initiatives that combine finance education with ethical leadership.
+#         """
+#     )
+
+#     # Rotaract Club
+#     st.subheader("Rotaract Club")
+#     st.write("**Coordinator**")
+#     st.write(
+#         """
+#         The mission of Rotaract is to provide opportunities for personal development,
+#         address the physical and social needs of communities, and promote better
+#         relations between people worldwide through a framework of friendship.
+#         """
+#     )
+
+#     # Competitions
+#     st.subheader("Competitions & Achievements")
+#     st.write(
+#         """
+#         - **WorldQuant - International Quant Competition**: Awarded Bronze Medal.
+#         - **Bloomberg - Global Trading Competition**: Ranked in the Top 100 among 2,000 teams.
+#         """
+#     )
+
+#     # Personal Interests
+#     st.subheader("Personal Interests")
+#     st.write(
+#         """
+#         - **Agriculture**: Passionate agriculturist involved in coconut, areca, and coffee plantations.
+#         - **Fitness Enthusiast**: Enjoys running and lifting weights.
+#         """
+#     )
+
 def extracurricular():
     st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
     st.title("Extracurricular & Competitions", anchor="extracurricular")
 
     # India Club - Lehigh University
-    st.subheader("India Club - Lehigh University")
-    st.write("**Treasurer · Sep 2023 - Present**")
-    st.write(
+    # with st.expander("India Club - Lehigh University"):
+    #     st.write("**Treasurer · Sep 2023 - Present**")
+    #     st.write(
+    #         """
+    #         - Coordinating and allocating finances for the organization of events by the Indian community.
+    #         - Organizing fundraisers for campaigns and drives.
+    #         """
+    #     )
+
+    # # Scholars of Finance - Lehigh
+    # with st.expander("Scholars of Finance - Lehigh"):
+    #     st.write("**Coordinator · Aug 2023 - Present**")
+    #     st.write(
+    #         """
+    #         Associated with Lehigh University, supporting initiatives that combine finance education with ethical leadership.
+    #         """
+    #     )
+
+    # # Rotaract Club
+    # with st.expander("Rotaract Club"):
+    #     st.write("**Coordinator**")
+    #     st.write(
+    #         """
+    #         The mission of Rotaract is to provide opportunities for personal development,
+    #         address the physical and social needs of communities, and promote better
+    #         relations between people worldwide through a framework of friendship.
+    #         """
+    #     )
+# Combined Expander for Extracurricular Activities
+    with st.expander("Extracurricular Activities"):
+    # India Club - Lehigh University
+        st.subheader("India Club - Lehigh University")
+        st.write("**Treasurer · Sep 2023 - Present**")
+        st.write(
         """
         - Coordinating and allocating finances for the organization of events by the Indian community.
         - Organizing fundraisers for campaigns and drives.
         """
-    )
+        )
 
     # Scholars of Finance - Lehigh
-    st.subheader("Scholars of Finance - Lehigh")
-    st.write("**Coordinator · Aug 2023 - Present**")
-    st.write(
+        st.subheader("Scholars of Finance - Lehigh")
+        st.write("**Coordinator · Aug 2023 - Present**")
+        st.write(
         """
         Associated with Lehigh University, supporting initiatives that combine finance education with ethical leadership.
         """
-    )
+        )
 
     # Rotaract Club
-    st.subheader("Rotaract Club")
-    st.write("**Coordinator**")
-    st.write(
+        st.subheader("Rotaract Club")
+        st.write("**Coordinator**")
+        st.write(
         """
         The mission of Rotaract is to provide opportunities for personal development,
         address the physical and social needs of communities, and promote better
         relations between people worldwide through a framework of friendship.
         """
-    )
-
+        )
     # Competitions
-    st.subheader("Competitions & Achievements")
-    st.write(
-        """
-        - **WorldQuant - International Quant Competition**: Awarded Bronze Medal.
-        - **Bloomberg - Global Trading Competition**: Ranked in the Top 100 among 2,000 teams.
-        """
-    )
+    with st.expander("Competitions & Achievements"):
+        st.write(
+            """
+            - **WorldQuant - International Quant Competition**: Awarded Bronze Medal.
+            - **Bloomberg - Global Trading Competition**: Ranked in the Top 100 among 2,000 teams.
+            """
+        )
 
     # Personal Interests
-    st.subheader("Personal Interests")
-    st.write(
-        """
-        - **Agriculture**: Passionate agriculturist involved in coconut, areca, and coffee plantations.
-        - **Fitness Enthusiast**: Enjoys running and lifting weights.
-        """
-    )
-
+    with st.expander("Personal Interests"):
+        st.write(
+            """
+            - **Agriculture**: Passionate agriculturist involved in coconut, areca, and coffee plantations.
+            - **Fitness Enthusiast**: Enjoys running and lifting weights.
+            """
+        )
 
 
 # Contact Me Section
