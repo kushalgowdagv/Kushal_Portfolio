@@ -410,7 +410,62 @@ parameters like Delta, Gamma, Theta, Vega, and others evolve with respect to cha
     # Add spacing for better readability
     st.markdown("<br>", unsafe_allow_html=True)
 
+
     # Project 2
+    st.markdown("#### Visualisation and evaluation of Pricing Models")
+    col1, col2 = st.columns([2, 1])  # Adjust column ratios as needed
+    
+    with col1:
+        st.write("""
+ a tool that bridges the gap between complex portfolio analysis and actionable insights. This project combines my love for coding
+ , data visualization, and financial modeling into one powerful application.
+
+The application also provides a dynamic and interactive visualization  charts for stock performance, correlation heatmaps, and efficient frontiers. 
+enabling users to automatically adjust weights to maximize returns or minimize risk. 
+ Advanced Risk Metrics: Historical VaR, Monte Carlo VaR, Expected Shortfall, and more. 
+✨ Tail Risk Analysis: Use Extreme Value Theory (EVT) to analyze rare but impactful events. 
+✨ Stress Testing: Simulate extreme market scenarios to understand portfolio behavior. 
+        """)
+        st.markdown(
+            """
+            <a href="https://github.com/kushalgowdagv/Multi_Equity_MPT_Portfolio_Optimisation_and_Risk_Metrics_analysis" target="_blank" style="
+                display: inline-block;
+                padding: 10px 20px;
+                font-size: 14px;
+                font-weight: bold;
+                color: #E63946;
+                border: 2px solid #E63946;
+                border-radius: 25px;
+                text-decoration: none;
+            ">GitHub</a>
+            """,
+            unsafe_allow_html=True,
+        )
+        st.markdown(
+            """
+            <a href="https://riskspectrum.streamlit.app/" target="_blank" style="
+                display: inline-block;
+                margin-top: 10px;
+                padding: 10px 20px;
+                font-size: 14px;
+                font-weight: bold;
+                color: #457B9D;
+                border: 2px solid #457B9D;
+                border-radius: 25px;
+                text-decoration: none;
+            ">Visit Website</a>
+            """,
+            unsafe_allow_html=True,
+        )
+    with col2:
+        # Replace 'image_path' with your image file or a placeholder URL
+        image_path = "https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/Multi equity risk modelling and optimisation.jpg"  # Ensure the file is correctly referenced in your directory
+        st.image(image_path, use_column_width=True)
+
+    # Add spacing for better readability
+    st.markdown("<br>", unsafe_allow_html=True)
+
+    # Project 3
     st.markdown("#### FAMA French Modelling")
     col1, col2 = st.columns([2, 1])  # Adjust column ratios as needed
     
