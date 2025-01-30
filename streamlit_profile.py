@@ -460,7 +460,7 @@ enabling users to automatically adjust weights to maximize returns or minimize r
     with col2:
         # Replace 'image_path' with your image file or a placeholder URL
         image_path = "https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/Multi equity risk modelling and optimisation.jpg"  # Ensure the file is correctly referenced in your directory
-        st.image(image_path, use_column_width=True)
+        st.image(image_path, use_container_width=True)
 
     # Add spacing for better readability
     st.markdown("<br>", unsafe_allow_html=True)
@@ -494,7 +494,7 @@ This project develops a fundamental factor model using ten factors:
     with col2:
         # Replace 'image_path' with your image file or a placeholder URL
         image_path = "https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/Fama_french_model.jpg"  # Ensure the file is correctly referenced in your directory
-        st.image(image_path, use_column_width=True)
+        st.image(image_path, use_container_width=True)
 
     # Add spacing for better readability
     st.markdown("<br>", unsafe_allow_html=True)
@@ -542,7 +542,7 @@ This project, titled "Fed-GPT: Translating Fedspeak," focuses on analyzing Feder
     with col2:
         # Replace 'image_path' with your image file or a placeholder URL
         image_path = "https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/Picture1.png"  # Ensure the file is correctly referenced in your directory
-        st.image(image_path, use_column_width=True)
+        st.image(image_path, use_container_width=True)
 
     # Add spacing for better readability
     st.markdown("<br>", unsafe_allow_html=True)
@@ -579,7 +579,7 @@ The project uses various machine learning tools and libraries to train an agent 
     with col2:
         # Replace 'image_path' with your image file or a placeholder URL
         image_path = "https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/SPX_trading_RFE.jpg"  # Ensure the file is correctly referenced in your directory
-        st.image(image_path, use_column_width=True)
+        st.image(image_path, use_container_width=True)
 
     # Add spacing for better readability
     st.markdown("<br>", unsafe_allow_html=True)
@@ -612,7 +612,7 @@ This Project provides a comprehensive guide to download historical stock data, a
     with col2:
         # Replace 'image_path' with your image file or a placeholder URL
         image_path = "https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/Portfolio_Oprimization.jpg"  # Ensure the file is correctly referenced in your directory
-        st.image(image_path, use_column_width=True)
+        st.image(image_path, use_container_width=True)
 
     # Add spacing for better readability
     st.markdown("<br>", unsafe_allow_html=True)
