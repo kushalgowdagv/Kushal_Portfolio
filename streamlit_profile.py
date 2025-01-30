@@ -405,7 +405,7 @@ parameters like Delta, Gamma, Theta, Vega, and others evolve with respect to cha
     with col2:
         # Replace 'image_path' with your image file or a placeholder URL
         image_path = "https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/Binomial_tree_Forecasting.jpg"  # Ensure the file is correctly referenced in your directory
-        st.image(image_path, use_column_width=True)
+        st.image(image_path, use_container_width=True)
 
     # Add spacing for better readability
     st.markdown("<br>", unsafe_allow_html=True)
@@ -460,6 +460,9 @@ enabling users to automatically adjust weights to maximize returns or minimize r
     with col2:
         # Replace 'image_path' with your image file or a placeholder URL
         image_path = "https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/Multi equity risk modelling and optimisation.jpg"  # Ensure the file is correctly referenced in your directory
+        st.image(image_path, use_container_width=True)
+
+        image_path = "https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/Multi equity risk params.jpg"  # Ensure the file is correctly referenced in your directory
         st.image(image_path, use_container_width=True)
 
     # Add spacing for better readability
