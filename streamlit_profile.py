@@ -422,7 +422,8 @@ parameters like Delta, Gamma, Theta, Vega, and others evolve with respect to cha
 
 The application also provides a dynamic and interactive visualization  charts for stock performance, correlation heatmaps, and efficient frontiers. 
 enabling users to automatically adjust weights to maximize returns or minimize risk. 
- Advanced Risk Metrics: Historical VaR, Monte Carlo VaR, Expected Shortfall, and more. 
+
+✨ Advanced Risk Metrics: Historical VaR, Monte Carlo VaR, Expected Shortfall, and more. 
 ✨ Tail Risk Analysis: Use Extreme Value Theory (EVT) to analyze rare but impactful events. 
 ✨ Stress Testing: Simulate extreme market scenarios to understand portfolio behavior. 
         """)
