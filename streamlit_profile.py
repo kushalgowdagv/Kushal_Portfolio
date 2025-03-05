@@ -412,12 +412,12 @@ parameters like Delta, Gamma, Theta, Vega, and others evolve with respect to cha
 
 
     # Project 2
-    st.markdown("#### Visualisation and evaluation of Pricing Models")
+    st.markdown("#### Portfolio Optimization and Risk Metrics")
     col1, col2 = st.columns([2, 1])  # Adjust column ratios as needed
     
     with col1:
         st.write("""
- a tool that bridges the gap between complex portfolio analysis and actionable insights. This project combines my love for coding
+ A tool that bridges the gap between complex portfolio analysis and actionable insights. This project combines my love for coding
  , data visualization, and financial modeling into one powerful application.
 
 The application also provides a dynamic and interactive visualization  charts for stock performance, correlation heatmaps, and efficient frontiers. 
