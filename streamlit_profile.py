@@ -407,6 +407,9 @@ parameters like Delta, Gamma, Theta, Vega, and others evolve with respect to cha
         image_path = "https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/Binomial_tree_Forecasting.jpg"  # Ensure the file is correctly referenced in your directory
         st.image(image_path, use_container_width=True)
 
+        image_path = "https://raw.githubusercontent.com/kushalgowdagv/Kushal_Portfolio/main/images/Monte_carlo_sim.jpg"  # Ensure the file is correctly referenced in your directory
+        st.image(image_path, use_container_width=True)
+
     # Add spacing for better readability
     st.markdown("<br>", unsafe_allow_html=True)
 
